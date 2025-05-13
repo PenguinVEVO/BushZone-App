@@ -1,0 +1,115 @@
+/* General Node Style */
+.node-element 
+{
+    background-color: rgb(34, 34, 34);
+    border-width: 1px;
+    border-color: rgb(50, 50, 50);
+    border-radius: 12px 12px 12px 12px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 100px;
+    min-height: 80px;
+    width: auto;  
+    padding: 4px;
+}
+
+
+/* Title Section */
+.node-title 
+{
+    background-color: rgb(200, 140, 0);
+    color: white;
+    font-size: 14px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    padding: 5px;
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+    min-width: 0;
+}
+
+.title-label 
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    flex-shrink: 1;
+    flex-grow: 1;
+    min-width: 0;
+    max-width: 100%;
+}
+
+
+/* Node Body - Ensures Full Coverage */
+.node-body
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%; 
+    height: auto;
+    background-color: rgb(34, 34, 34);
+    padding: 3px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Port Section - Ensures Ports Are Contained Inside */
+.node-ports 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 5px;
+}
+
+.input-container, 
+.output-container 
+{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.output-container
+{
+    align-items: flex-end;
+}
+
+.node-selected 
+{
+    border-color: rgb(255, 204, 0);
+    border-width: 5px;
+    transition: border-color 0.1s ease-in-out;
+}
+
+.node-selected > .node-title 
+{
+    background-color: rgb(255, 180, 0);
+}
+
+/* Bottom Section - Node Settings */
+.node-settings
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 6px;
+    background-color: rgb(34, 34, 34);
+}
+
+.node-Settings > *
+{
+    margin-bottom: 4px;
+}
