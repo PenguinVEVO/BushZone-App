@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd2f6fe64005fae4583bda7ff9a89501, type: 3}
+  m_Name: Swapdoodle_DoodleLesson_Selecting
+  m_EditorClassIdentifier: Assembly-CSharp::MusicData
+  SongName: Doodle Lesson - Selecting
+  ArtistNames:
+  - Nintendo
+  AlbumName: Swapdoodle Soundtrack
+  AlbumArt: {fileID: 21300000, guid: 021229452c4edfb478b98a3c51e31d52, type: 3}
+  SongClip: {fileID: 8300000, guid: 9682b84a74b77f94d8db368895549a81, type: 3}

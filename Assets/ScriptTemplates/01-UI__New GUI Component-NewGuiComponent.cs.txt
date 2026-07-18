@@ -1,0 +1,18 @@
+using UnityEngine;
+
+namespace BZApp.Systems.GUI.Components
+{
+	public class #SCRIPTNAME# : GuiComponent
+	{
+		protected override void Awake() 
+		{
+			base.Awake();
+			#NOTRIM#
+		}
+		#NOTRIM#
+		private void Start()
+		{
+			#NOTRIM#
+		}
+	}
+}

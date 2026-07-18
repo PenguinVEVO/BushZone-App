@@ -1,0 +1,219 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5696693942136731561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fca4d263479a547a77f7ec5e3d0e68, type: 3}
+  m_Name: BZL_FinaliseSplashScreen(Clone)
+  m_EditorClassIdentifier: 
+  fadeTime: 1
+--- !u!114 &-5025768204208092182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd944c45909af542890a13a5c0a9418, type: 3}
+  m_Name: BZL_IntroSplashScreen(Clone)
+  m_EditorClassIdentifier: 
+  fadeTime: 1
+--- !u!114 &-4643408767159595147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c30adfec79282f429be88fe8991376f, type: 3}
+  m_Name: BZL_LoadNextScene
+  m_EditorClassIdentifier: 
+  parent: {fileID: 0}
+  currentState: 1
+  priority: 0
+  childNodes:
+  - {fileID: -922381031552287999}
+  executeOnce: 0
+  stateExtension: {fileID: -1993576450196391656}
+--- !u!114 &-2454963378884164060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f322bf39e47eb41b527de2d635dfe8, type: 3}
+  m_Name: Exit Node
+  m_EditorClassIdentifier: 
+  parent: {fileID: 0}
+  currentState: 1
+  priority: 0
+  childNodes: []
+  executeOnce: 0
+  RestartTree: 0
+--- !u!114 &-2424495562754746793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c30adfec79282f429be88fe8991376f, type: 3}
+  m_Name: BZL_ActivateNextScene
+  m_EditorClassIdentifier: 
+  parent: {fileID: 0}
+  currentState: 1
+  priority: 0
+  childNodes:
+  - {fileID: -2454963378884164060}
+  executeOnce: 0
+  stateExtension: {fileID: 8525736761851589944}
+--- !u!114 &-1993576450196391656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a68ee95b4195041a243f5d6c1bbf68, type: 3}
+  m_Name: BZL_LoadNextScene(Clone)
+  m_EditorClassIdentifier: 
+  SceneIndex: 2
+--- !u!114 &-1092684913370461895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c30adfec79282f429be88fe8991376f, type: 3}
+  m_Name: BZL_IntroSplashScreen
+  m_EditorClassIdentifier: 
+  parent: {fileID: 0}
+  currentState: 1
+  priority: 0
+  childNodes:
+  - {fileID: -4643408767159595147}
+  executeOnce: 0
+  stateExtension: {fileID: -5025768204208092182}
+--- !u!114 &-922381031552287999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c30adfec79282f429be88fe8991376f, type: 3}
+  m_Name: BZL_FakeLogin
+  m_EditorClassIdentifier: 
+  parent: {fileID: 0}
+  currentState: 1
+  priority: 0
+  childNodes:
+  - {fileID: 7318250775079244649}
+  executeOnce: 0
+  stateExtension: {fileID: 1973447856571475659}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9816dd5bab63b9e459e4d71ac6b7c72c, type: 3}
+  m_Name: BushZoneLoaderTree
+  m_EditorClassIdentifier: 
+  RootNode: {fileID: 5082405897484417492}
+  RuntimeNodes:
+  - {fileID: -2454963378884164060}
+  - {fileID: -2424495562754746793}
+  - {fileID: 7318250775079244649}
+  - {fileID: -922381031552287999}
+  - {fileID: -4643408767159595147}
+  - {fileID: -1092684913370461895}
+  - {fileID: 5082405897484417492}
+  TreeName: BushZoneLoaderTree
+--- !u!114 &1973447856571475659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8fd359580336245af7f35d1ef78ad0, type: 3}
+  m_Name: BZL_FakeLogin(Clone)
+  m_EditorClassIdentifier: 
+--- !u!114 &5082405897484417492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 995ed287a288eaf4981c55d46df933e5, type: 3}
+  m_Name: Start Node
+  m_EditorClassIdentifier: 
+  parent: {fileID: 0}
+  currentState: 1
+  priority: 0
+  childNodes:
+  - {fileID: -1092684913370461895}
+  executeOnce: 0
+  EntryPoint: 0
+--- !u!114 &7318250775079244649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c30adfec79282f429be88fe8991376f, type: 3}
+  m_Name: BZL_FinaliseSplashScreen
+  m_EditorClassIdentifier: 
+  parent: {fileID: 0}
+  currentState: 1
+  priority: 0
+  childNodes:
+  - {fileID: -2424495562754746793}
+  executeOnce: 0
+  stateExtension: {fileID: -5696693942136731561}
+--- !u!114 &8525736761851589944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fabdb54cb6b59db4ea2e1132a6a17259, type: 3}
+  m_Name: BZL_ActivateNextScene(Clone)
+  m_EditorClassIdentifier: 
