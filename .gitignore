@@ -80,5 +80,5 @@ crashlytics-build.properties
 # ====================  PACKAGE ENTRIES  ====================
 
 # AutoDarkMode directory which some contributors may not want
-/[Aa]ssets/[Pp]ackages/AutoDarkMode.meta
-/[Aa]ssets/[Pp]ackages/AutoDarkMode/*
+/[Aa]ssets/[Pp]ackages/AutoDarkTheme.meta
+/[Aa]ssets/[Pp]ackages/AutoDarkTheme/*
