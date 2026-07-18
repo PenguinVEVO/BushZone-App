@@ -2,6 +2,9 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
+
+# ====================  STANDARD ENTRIES  ====================
+
 .utmp/
 /[Ll]ibrary/
 /[Tt]emp/
@@ -73,3 +76,9 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# ====================  PACKAGE ENTRIES  ====================
+
+# AutoDarkMode directory which some contributors may not want
+/[Aa]ssets/[Pp]ackages/AutoDarkMode.meta
+/[Aa]ssets/[Pp]ackages/AutoDarkMode/*
