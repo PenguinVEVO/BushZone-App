@@ -105,8 +105,8 @@ namespace Systems.GUI.Components
             isActive = true;
             
             popupTextComponent.enabled = true;
-            popupTextComponent.parseCtrlCharacters = true;
-            popupTextComponent.SetText(textToSet);
+            string fixedText = textToSet.Replace("\\n", "\n");
+            popupTextComponent.SetText(fixedText);
             popupImageComponent.enabled = true;
             popupBackgroundComponent.enabled = true;
             StartCoroutine(ScaleObjectOverTime(popupImageComponent.rectTransform, true));
