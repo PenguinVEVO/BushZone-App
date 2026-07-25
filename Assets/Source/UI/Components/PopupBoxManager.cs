@@ -110,8 +110,8 @@ namespace Systems.GUI.Components
             popupImageComponent.enabled = true;
             popupBackgroundComponent.enabled = true;
             StartCoroutine(ScaleObjectOverTime(popupImageComponent.rectTransform, true));
-            guiSystem.FadeComponent(popupBackgroundComponent, Color.clear, darkenedBackgroundColor, fadeTime);
-            guiSystem.FadeComponent(popupImageComponent, Color.clear, Color.white, fadeTime);
+            StartCoroutine(guiSystem.FadeComponentsOverTime(new Image[1] {popupBackgroundComponent}, Color.clear, darkenedBackgroundColor, fadeTime));
+            StartCoroutine(guiSystem.FadeComponentsOverTime(new Image[1] {popupImageComponent}, Color.clear, Color.white, fadeTime));
         }
 
         public void DismissPopupBox()
