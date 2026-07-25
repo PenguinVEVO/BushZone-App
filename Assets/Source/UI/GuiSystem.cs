@@ -8,7 +8,7 @@
 //    https://chatgpt.com/share/694eafda-2c50-8002-8697-b3c255b417e7
 //  ============================================================================================
 
-using BZApp.Systems.GUI.Components;
+using BZApp.GUI.Systems.Components;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,7 +16,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BZApp.Systems.GUI
+namespace BZApp.GUI.Systems
 {
     [AddComponentMenu("UI/GUI System/GUI System")]
     public class GuiSystem : MonoBehaviour

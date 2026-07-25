@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Mitchel.Utilities
+namespace BZApp.GUI.Utilities
 {
     public static class ExtColour
     {

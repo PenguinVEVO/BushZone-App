@@ -4,7 +4,7 @@
 
 using UnityEngine;
 
-namespace BZApp.Systems.GUI.Components
+namespace BZApp.GUI.Systems.Components
 {
     public class GuiComponent : MonoBehaviour
     {

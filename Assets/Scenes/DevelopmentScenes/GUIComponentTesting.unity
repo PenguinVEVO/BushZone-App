@@ -1993,6 +1993,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 563720939}
     m_Modifications:
+    - target: {fileID: 205901725025690444, guid: a9d1c32be4dce227a9941410821c21cb,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 205901725025690444, guid: a9d1c32be4dce227a9941410821c21cb,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 534586837433280967, guid: a9d1c32be4dce227a9941410821c21cb,
         type: 3}
       propertyPath: m_enableWordWrapping
