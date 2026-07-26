@@ -6,13 +6,10 @@ using UnityEngine;
 
 namespace BZApp.GUI.Systems.Components
 {
-    public class GuiComponent : MonoBehaviour
+    [RequireComponent(typeof(GuiSystem))]
+    public abstract class GuiComponent : MonoBehaviour
     {
-        /* ======================[#]  DEPENDENCIES  [#]====================== */
-
         protected GuiSystem guiSystem;
-        
-        /* ======================[#]  LIFECYCLE FUNCTIONS  [#]====================== */
 
         protected virtual void Awake()
         {

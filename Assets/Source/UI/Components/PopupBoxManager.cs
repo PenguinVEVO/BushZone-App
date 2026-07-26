@@ -12,6 +12,7 @@ using UnityEngine.UI;
 
 namespace BZApp.GUI.Systems.Components
 {
+    [AddComponentMenu("UI/GUI Components/Popup Box Manager")]
     public class PopupBoxManager : GuiComponent
     {
         //-------- General Variables --------\\
@@ -101,18 +102,18 @@ namespace BZApp.GUI.Systems.Components
             popupTextComponent.SetText(textToSet);
             popupImageComponent.enabled = true;
             popupBackgroundComponent.enabled = true;
-            StartCoroutine(guiSystem.FadeComponentsOverTime(new Image[1] { popupBackgroundComponent }, ExtColour.ClearWhite, darkenedBackgroundColor, fadeTime));
-            StartCoroutine(guiSystem.FadeComponentsOverTime(new Image[1] { popupImageComponent }, ExtColour.ClearWhite, Color.white, fadeTime));
-            StartCoroutine(guiSystem.FadeComponentsOverTime(new TextMeshProUGUI[1] { popupTextComponent }, Color.clear, Color.black, fadeTime));
+            StartCoroutine(guiSystem.FadeElementsOverTime(new Image[1] { popupBackgroundComponent }, ExtColour.ClearWhite, darkenedBackgroundColor, fadeTime));
+            StartCoroutine(guiSystem.FadeElementsOverTime(new Image[1] { popupImageComponent }, ExtColour.ClearWhite, Color.white, fadeTime));
+            StartCoroutine(guiSystem.FadeElementsOverTime(new TextMeshProUGUI[1] { popupTextComponent }, Color.clear, Color.black, fadeTime));
             yield return StartCoroutine(ScaleObjectOverTime(popupImageComponent.rectTransform, true));
             Activated();
         }
 
         private IEnumerator PopupDismiss()
         {
-            StartCoroutine(guiSystem.FadeComponentsOverTime(new Image[1] { popupBackgroundComponent }, darkenedBackgroundColor, ExtColour.ClearWhite, fadeTime));
-            StartCoroutine(guiSystem.FadeComponentsOverTime(new Image[1] { popupImageComponent }, Color.white, ExtColour.ClearWhite, fadeTime));
-            StartCoroutine(guiSystem.FadeComponentsOverTime(new TextMeshProUGUI[1] { popupTextComponent }, Color.black, Color.clear, fadeTime));
+            StartCoroutine(guiSystem.FadeElementsOverTime(new Image[1] { popupBackgroundComponent }, darkenedBackgroundColor, ExtColour.ClearWhite, fadeTime));
+            StartCoroutine(guiSystem.FadeElementsOverTime(new Image[1] { popupImageComponent }, Color.white, ExtColour.ClearWhite, fadeTime));
+            StartCoroutine(guiSystem.FadeElementsOverTime(new TextMeshProUGUI[1] { popupTextComponent }, Color.black, Color.clear, fadeTime));
             exitButtonComponent.enabled = false;
             yield return StartCoroutine(ScaleObjectOverTime(popupImageComponent.rectTransform, false));
             Deactivated();
