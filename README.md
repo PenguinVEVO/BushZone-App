@@ -4,6 +4,6 @@ The desktop app for the BushZone website, featuring the ability to view games ma
 This project is still VERY early in development and likely won't see any update until a working prototype has been made. See https://bush.coralcmd.net/ for more info.
 
 ## Current Contributors
-PenguinVEVO — Project Lead, Lead Programmer, Lead UI/UX Designer
-Artronoth — Assistant UI/UX Programmer
-M. A. McCollum — Backend Architect
+PenguinVEVO — Project Lead, Lead Programmer, Lead UI/UX Designer  
+Artronoth — Assistant UI/UX Programmer  
+M. A. McCollum — Backend Architect  
