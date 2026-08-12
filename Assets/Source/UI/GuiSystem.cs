@@ -53,7 +53,7 @@ namespace BZApp.GUI.Systems
         {
             var componentType = guiComponent.GetType();
             if (guiComponents.TryAdd(componentType, guiComponent)) return;
-            Debug.LogError($"[ERROR] A reference for type \"{componentType}\" is already registered!");
+            Debug.LogWarning($"[WARNING] A reference for type \"{componentType}\" is already registered.");
         }
         
         /// <summary>
@@ -62,12 +62,68 @@ namespace BZApp.GUI.Systems
         /// <typeparam name="T">The type of the GUI Component you're trying to access.</typeparam>
         public T Get<T>() where T : GuiComponent
         {
-            if (guiComponents.TryGetValue(typeof(T), out var guiComponent))
-                return (T)guiComponent;
-            
-            Debug.LogError($"[ERROR] Could not find GUI Component of type {typeof(T)}.\n" +
-                           $"Ensure that {typeof(T)} is properly registered to the GUI System before trying to access it.");
-            return null;
+            return guiComponents.TryGetValue(typeof(T), out var guiComponent)
+                ? (T)guiComponent : null;
+        }
+
+        /// <summary>
+        /// Try and get a registered GUI Component from the GUI System registry.
+        /// </summary>
+        /// <typeparam name="T">The type of the GUI Component you're trying to access.</typeparam>
+        /// <returns>True if component was found, otherwise false.</returns>
+        public bool TryGet<T>(out T guiComponent) where T : GuiComponent
+        {
+            if (guiComponents.TryGetValue(typeof(T), out var component)) 
+            {
+                guiComponent = (T)component;
+                return true;
+            }
+            guiComponent = null;
+            return false;
+        }
+
+        // =========================[#]  UTILITY UI FUNCTIONS: GENERAL  [#]=========================
+
+        /// <summary>
+        /// Get the current colour of a Graphic.
+        /// </summary>
+        public static Color GetColour(Graphic graphic)
+            => graphic switch
+            {
+                TextMeshProUGUI text => text.color,
+                _ => graphic.color
+            };
+
+        /// <summary>
+        /// Get an array of the current colours from an array/list of Graphics.
+        /// </summary>
+        public static Color[] GetColour(IReadOnlyList<Graphic> graphics)
+        {
+            Color[] resultingColours = new Color[graphics.Count];
+            for (int i = 0; i < graphics.Count; i++)
+                resultingColours[i] = GetColour(graphics[i]);
+            return resultingColours;
+        }
+
+        /// <summary>
+        /// Get the current colour of a Graphic with the alpha set to 0. Ideal for fading in/out elements.
+        /// </summary>
+        public static Color GetTransparentColour(Graphic graphic)
+            => graphic switch
+            {
+                TextMeshProUGUI text => new Color(text.color.r, text.color.g, text.color.b, 0),
+                _ => new Color(graphic.color.r, graphic.color.g, graphic.color.b, 0)
+            };
+
+        /// <summary>
+        /// Get an array of the current colours from an array/list of Graphics, with the alpha values set to 0.
+        /// </summary>
+        public static Color[] GetTransparentColour(IReadOnlyList<Graphic> graphics)
+        {
+            Color[] resultingColours = new Color[graphics.Count];
+            for (int i = 0; i < graphics.Count; i++)
+                resultingColours[i] = GetTransparentColour(graphics[i]);
+            return resultingColours;
         }
 
         // =========================[#]  UTILITY UI FUNCTIONS: FADING  [#]=========================
