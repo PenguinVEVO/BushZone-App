@@ -7,7 +7,6 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
 namespace BZApp.GUI.Systems.Components
@@ -65,6 +64,9 @@ namespace BZApp.GUI.Systems.Components
                 else if (component is TextMeshProUGUI text)
                     text.enabled = false;
             popupBackgroundComponent.color = Color.clear;
+            popupImageComponent.rectTransform.localScale = originalPopupBoxSize;
+            popupTextComponent.rectTransform.localScale = originalPopupBoxSize;
+            exitButtonComponent.rectTransform.localScale = originalPopupBoxSize;
             isActive = false;
         }
 
@@ -75,7 +77,7 @@ namespace BZApp.GUI.Systems.Components
                     image.enabled = true;
                 else if (component is TextMeshProUGUI text)
                     text.enabled = true;
-            StartCoroutine(InputDetection());
+            StartCoroutine(InputDetection(true));
         }
 
         //-------- Main Popup API --------\\
@@ -105,7 +107,7 @@ namespace BZApp.GUI.Systems.Components
             StartCoroutine(guiSystem.FadeElementsOverTime(new Image[1] { popupBackgroundComponent }, ExtColour.ClearWhite, darkenedBackgroundColor, fadeTime));
             StartCoroutine(guiSystem.FadeElementsOverTime(new Image[1] { popupImageComponent }, ExtColour.ClearWhite, Color.white, fadeTime));
             StartCoroutine(guiSystem.FadeElementsOverTime(new TextMeshProUGUI[1] { popupTextComponent }, Color.clear, Color.black, fadeTime));
-            yield return StartCoroutine(ScaleObjectOverTime(popupImageComponent.rectTransform, true));
+            yield return StartCoroutine(guiSystem.ScaleElementsOverTime(popupImageComponent.rectTransform, sizeUpCurve));
             Activated();
         }
 
@@ -115,34 +117,24 @@ namespace BZApp.GUI.Systems.Components
             StartCoroutine(guiSystem.FadeElementsOverTime(new Image[1] { popupImageComponent }, Color.white, ExtColour.ClearWhite, fadeTime));
             StartCoroutine(guiSystem.FadeElementsOverTime(new TextMeshProUGUI[1] { popupTextComponent }, Color.black, Color.clear, fadeTime));
             exitButtonComponent.enabled = false;
-            yield return StartCoroutine(ScaleObjectOverTime(popupImageComponent.rectTransform, false));
+            yield return StartCoroutine(guiSystem.ScaleElementsOverTime(popupImageComponent.rectTransform, sizeDownCurve));
             Deactivated();
         }
 
-        private IEnumerator InputDetection()
+        private IEnumerator InputDetection(bool isActivated)
         {
-            yield return new WaitUntil(() => Keyboard.current.spaceKey.wasPressedThisFrame);
-            DismissPopupBox();
-        }
-
-        //-------- Utility Coroutines --------\\
-        
-        private IEnumerator ScaleObjectOverTime(RectTransform element, bool isActivating)
-        {
-            AnimationCurve currentCurve = isActivating ? sizeUpCurve : sizeDownCurve;
-            
-            float elapsed = 0f;
-            float duration = currentCurve.keys[^1].time;
-
-            while (elapsed < duration)
+            if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
-                element.localScale = originalPopupBoxSize * currentCurve.Evaluate(elapsed);
-
-                elapsed += Time.deltaTime;
-                yield return null;
+                DismissPopupBox();
+                isActive = false;
             }
-
-            element.localScale = originalPopupBoxSize * currentCurve.keys[^1].value;
+            while (isActive == true)
+            {
+                StartCoroutine(guiSystem.FadeElementsOverTime(exitButtonComponent, Color.white, ExtColour.ClearWhite, fadeTime));
+                yield return new WaitForSeconds(fadeTime);
+                StartCoroutine(guiSystem.FadeElementsOverTime(exitButtonComponent, ExtColour.ClearWhite, Color.white, fadeTime));
+                yield return new WaitForSeconds(fadeTime);
+            }
         }
     }
 }
