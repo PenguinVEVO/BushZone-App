@@ -37,7 +37,6 @@ namespace BZApp.GUI.Systems.Components
         private Vector3 originalPopupBoxSize;
         private Component[] popupElements;
         private bool isActive;
-        private bool flashing;
         private Coroutine flash;
 
         //-------- Lifecycle Functions --------\\
@@ -91,7 +90,6 @@ namespace BZApp.GUI.Systems.Components
             isActive = true;
             
             StartCoroutine(PopupInvoke(textToSet));
-            flashing = true;
         }
 
         public void DismissPopupBox()
@@ -129,7 +127,6 @@ namespace BZApp.GUI.Systems.Components
         {
             flash = StartCoroutine(ButtonFlash());
             yield return new WaitUntil(() => Keyboard.current.spaceKey.wasPressedThisFrame);
-            flashing = false;
             StopCoroutine(flash);
             DismissPopupBox();
         }
@@ -137,7 +134,7 @@ namespace BZApp.GUI.Systems.Components
         private IEnumerator ButtonFlash()
         { 
             float flashTime = buttonCurve.keys[^1].time;
-            while (flashing == true)
+            while (true)
             {
                 StartCoroutine(guiSystem.FadeElementsOverTime(exitButtonComponent, ExtColour.ClearWhite, Color.white, buttonCurve));
                 yield return new WaitForSeconds(flashTime);
