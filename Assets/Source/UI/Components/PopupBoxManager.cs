@@ -22,6 +22,7 @@ namespace BZApp.GUI.Systems.Components
         
         [SerializeField] private AnimationCurve sizeUpCurve;
         [SerializeField] private AnimationCurve sizeDownCurve;
+        [SerializeField] private AnimationCurve buttonCurve;
 
         //-------- Object References --------\\
 
@@ -36,6 +37,8 @@ namespace BZApp.GUI.Systems.Components
         private Vector3 originalPopupBoxSize;
         private Component[] popupElements;
         private bool isActive;
+        private bool flashing;
+        private Coroutine flash;
 
         //-------- Lifecycle Functions --------\\
 
@@ -77,7 +80,7 @@ namespace BZApp.GUI.Systems.Components
                     image.enabled = true;
                 else if (component is TextMeshProUGUI text)
                     text.enabled = true;
-            StartCoroutine(InputDetection(true));
+            StartCoroutine(InputDetection());
         }
 
         //-------- Main Popup API --------\\
@@ -88,6 +91,7 @@ namespace BZApp.GUI.Systems.Components
             isActive = true;
             
             StartCoroutine(PopupInvoke(textToSet));
+            flashing = true;
         }
 
         public void DismissPopupBox()
@@ -121,19 +125,22 @@ namespace BZApp.GUI.Systems.Components
             Deactivated();
         }
 
-        private IEnumerator InputDetection(bool isActivated)
+        private IEnumerator InputDetection()
         {
-            if (Keyboard.current.spaceKey.wasPressedThisFrame)
+            flash = StartCoroutine(ButtonFlash());
+            yield return new WaitUntil(() => Keyboard.current.spaceKey.wasPressedThisFrame);
+            flashing = false;
+            StopCoroutine(flash);
+            DismissPopupBox();
+        }
+
+        private IEnumerator ButtonFlash()
+        { 
+            float flashTime = buttonCurve.keys[^1].time;
+            while (flashing == true)
             {
-                DismissPopupBox();
-                isActive = false;
-            }
-            while (isActive == true)
-            {
-                StartCoroutine(guiSystem.FadeElementsOverTime(exitButtonComponent, Color.white, ExtColour.ClearWhite, fadeTime));
-                yield return new WaitForSeconds(fadeTime);
-                StartCoroutine(guiSystem.FadeElementsOverTime(exitButtonComponent, ExtColour.ClearWhite, Color.white, fadeTime));
-                yield return new WaitForSeconds(fadeTime);
+                StartCoroutine(guiSystem.FadeElementsOverTime(exitButtonComponent, ExtColour.ClearWhite, Color.white, buttonCurve));
+                yield return new WaitForSeconds(flashTime);
             }
         }
     }
