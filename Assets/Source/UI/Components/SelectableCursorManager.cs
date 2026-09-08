@@ -9,13 +9,13 @@
 //  ============================================================================================
 
 using System.Collections;
+using BZApp.GUI.Utilities;
 using BZApp.Utilities;
-using Mitchel.Utilities;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace BZApp.Systems.GUI.Components
+namespace BZApp.GUI.Systems.Components
 {
 	public class SelectableCursorManager : GuiComponent
 	{

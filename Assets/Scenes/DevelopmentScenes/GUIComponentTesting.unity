@@ -1102,9 +1102,8 @@ MonoBehaviour:
 
     PopupBoxManager: "P"'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: fc92794df876ca74dbc5267151bd865d, type: 2}
-  m_sharedMaterial: {fileID: 4458042788401057009, guid: fc92794df876ca74dbc5267151bd865d,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1238,9 +1237,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Rafflesia Channel
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f37ac91da9a9033438acdfa09a5f18cb, type: 2}
-  m_sharedMaterial: {fileID: 1575303484740459466, guid: f37ac91da9a9033438acdfa09a5f18cb,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1387,9 +1385,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Xploshi
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 03510df2b0811344982931d71453c8b6, type: 2}
-  m_sharedMaterial: {fileID: 1663001272289451048, guid: 03510df2b0811344982931d71453c8b6,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1730,9 +1727,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Rafflesia Channel (2018)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 03510df2b0811344982931d71453c8b6, type: 2}
-  m_sharedMaterial: {fileID: 1663001272289451048, guid: 03510df2b0811344982931d71453c8b6,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1981,6 +1977,30 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  buttonCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 4.733888
+      outSlope: 4.733888
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.05034029
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -3.1898742
+      outSlope: -3.1898742
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.04014367
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   popupImageComponent: {fileID: 2005037192}
   popupBackgroundComponent: {fileID: 2005037193}
   popupTextComponent: {fileID: 2005037191}
@@ -1993,9 +2013,39 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 563720939}
     m_Modifications:
+    - target: {fileID: 205901725025690444, guid: a9d1c32be4dce227a9941410821c21cb,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 205901725025690444, guid: a9d1c32be4dce227a9941410821c21cb,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 534586837433280967, guid: a9d1c32be4dce227a9941410821c21cb,
         type: 3}
       propertyPath: m_enableWordWrapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016969759020199946, guid: a9d1c32be4dce227a9941410821c21cb,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016969759020199946, guid: a9d1c32be4dce227a9941410821c21cb,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016969759020199946, guid: a9d1c32be4dce227a9941410821c21cb,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4016969759020199946, guid: a9d1c32be4dce227a9941410821c21cb,
+        type: 3}
+      propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8037570408061825804, guid: a9d1c32be4dce227a9941410821c21cb,
