@@ -7,6 +7,7 @@ public class FloatingObject : MonoBehaviour
     [SerializeField] private float amplitude = 5f;
     private Vector3 startPos;
 
+	// Set position upon start
     private void Start()
     {
         startPos = transform.localPosition;
