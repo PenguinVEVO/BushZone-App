@@ -42,6 +42,20 @@ namespace BZApp.GUI.Components
 		// Coroutine references
 		private Coroutine toastCoroutine;
 		private Coroutine toastSlideCoroutine;
+		
+		// ======================[#]  LIFECYCLE FUNCTIONS  [#]======================
+
+		private void OnEnable()
+		{
+			AudioManager.OnMusicStarted += InvokeToast;
+			AudioManager.OnMusicStopped += DismissToast;
+		}
+
+		private void OnDisable()
+		{
+			AudioManager.OnMusicStarted -= InvokeToast;
+			AudioManager.OnMusicStopped -= DismissToast;
+		}
 
         // ======================[#]  PUBLIC MUSIC TOAST API  [#]======================
 
