@@ -16,18 +16,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Accept",
+                    "name": "Confirm",
                     "type": "Button",
                     "id": "735b62bc-7d47-40d0-bafe-283f84c4a4d6",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Submit",
-                    "type": "Button",
-                    "id": "708724d6-0fa0-4549-b645-3f0341150681",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -109,28 +100,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "9e92bb26-7e3b-4ec4-b06b-3c8f8e498ddc",
-                    "path": "*/{Submit}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Touch;Joystick;XR;Keyboard & Mouse;Generic Gamepad",
-                    "action": "Submit",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "82627dcc-3b13-4ba9-841d-e4b746d6553e",
-                    "path": "*/{Cancel}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Touch;Joystick;XR;Keyboard & Mouse;Generic Gamepad",
-                    "action": "Cancel",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "c52c8e0b-8179-41d3-b8a1-d149033bbe86",
                     "path": "<Mouse>/position",
                     "interactions": "",
@@ -191,17 +160,6 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Touch",
-                    "action": "Click",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "bb9e6b34-44bf-4381-ac63-5aa15d19f677",
-                    "path": "<XRController>/trigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "XR",
                     "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -395,12 +353,12 @@
                 },
                 {
                     "name": "",
-                    "id": "40095388-7fed-434c-906c-d86a808a6d1a",
-                    "path": "<Keyboard>/e",
+                    "id": "1c2e72b0-5d3c-4637-8ea3-d67b196f6b8f",
+                    "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard & Mouse",
-                    "action": "Accept",
+                    "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -411,18 +369,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard & Mouse",
-                    "action": "Accept",
+                    "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "1c2e72b0-5d3c-4637-8ea3-d67b196f6b8f",
-                    "path": "<Keyboard>/enter",
+                    "id": "40095388-7fed-434c-906c-d86a808a6d1a",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard & Mouse",
-                    "action": "Accept",
+                    "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -433,7 +391,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Generic Gamepad;Xbox Controller;PlayStation Controller",
-                    "action": "Accept",
+                    "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -444,7 +402,51 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Switch Pro Controller",
-                    "action": "Accept",
+                    "action": "Confirm",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0e5fc4d1-4499-4730-b5e8-cf898ed25e0a",
+                    "path": "<Keyboard>/backspace",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c6cf3d68-8f5a-4781-a2b0-f0ffcab67536",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard & Mouse",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7b163314-5633-4d37-a5a2-200aef7794e4",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Generic Gamepad;Xbox Controller;PlayStation Controller",
+                    "action": "Cancel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0d5cf644-1fa3-419a-a191-8324dc6e3743",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Switch Pro Controller",
+                    "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

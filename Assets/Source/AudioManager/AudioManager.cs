@@ -2,8 +2,8 @@
 //  By Mitchel Smith
 //  Created October 2025
 
-using BZApp.GUI.Systems;
-using BZApp.GUI.Systems.Components;
+using BZApp.GUI;
+using BZApp.GUI.Components;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;

@@ -15,8 +15,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace BZApp.GUI.Systems.Components
+namespace BZApp.GUI.Components
 {
+    [AddComponentMenu("UI/GUI Components/SelectableCursorManager")]
 	public class SelectableCursorManager : GuiComponent
 	{
         /* ======================[#]  CONFIGURATION  [#]====================== */

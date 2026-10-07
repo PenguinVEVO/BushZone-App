@@ -1,10 +1,9 @@
-using BZApp.GUI.Systems;
-using BZApp.GUI.Systems.Components;
+using BZApp.GUI.Components;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-namespace BZApp.Systems.GUI.Testing
+namespace BZApp.GUI.Testing
 {
     public class SelectableCursorTester : MonoBehaviour
     {

@@ -9,9 +9,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-namespace BZApp.GUI.Systems.Components
+namespace BZApp.GUI.Components
 {
-    [AddComponentMenu("UI/GUI Components/Popup Box Manager")]
+    [AddComponentMenu("UI/GUI Components/PopupBoxManager")]
     public class PopupBoxManager : GuiComponent
     {
         //-------- General Variables --------\\
@@ -79,6 +79,7 @@ namespace BZApp.GUI.Systems.Components
                     image.enabled = true;
                 else if (component is TextMeshProUGUI text)
                     text.enabled = true;
+            flash = StartCoroutine(ButtonFlash());
             StartCoroutine(InputDetection());
         }
 

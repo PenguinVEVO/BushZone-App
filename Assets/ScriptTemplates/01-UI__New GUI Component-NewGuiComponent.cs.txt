@@ -1,7 +1,8 @@
 using UnityEngine;
 
-namespace BZApp.Systems.GUI.Components
+namespace BZApp.GUI.Components
 {
+    [AddComponentMenu("UI/GUI Components/#SCRIPTNAME#")]
 	public class #SCRIPTNAME# : GuiComponent
 	{
 		protected override void Awake() 

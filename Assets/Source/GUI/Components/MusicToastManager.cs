@@ -8,9 +8,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BZApp.GUI.Systems.Components
+namespace BZApp.GUI.Components
 {
-    [AddComponentMenu("UI/GUI Components/Music Toast Manager")]
+    [AddComponentMenu("UI/GUI Components/MusicToastManager")]
     public class MusicToastManager : GuiComponent
 	{
         /* ======================[#]  CONFIGURATION  [#]====================== */
