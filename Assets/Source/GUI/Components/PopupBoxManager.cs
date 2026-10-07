@@ -1,6 +1,6 @@
-// Popup Box Manager
-// By Sayori Fazackerley
-// January 2026
+//  Popup Box Manager
+//  By Artronoth
+//  Created January 2026
 
 using BZApp.GUI.Utilities;
 using System.Collections;

@@ -1,6 +1,6 @@
 //  Music Toast Manager
-//  By Mitchel Smith
-//  November 2025
+//  By PenguinVEVO
+//  Created November 2025
 
 using BZApp.Systems.Audio;
 using System.Collections;
@@ -13,16 +13,15 @@ namespace BZApp.GUI.Components
     [AddComponentMenu("UI/GUI Components/MusicToastManager")]
     public class MusicToastManager : GuiComponent
 	{
-        /* ======================[#]  CONFIGURATION  [#]====================== */
+        // ======================[#]  CONFIGURATION  [#]======================
 
         [Header("Animation Settings")]
 		[SerializeField] private float slideDistance;
 		[SerializeField] private AnimationCurve slideInCurve;
 		[SerializeField] private float toastHoldTime;
 		[SerializeField] private AnimationCurve slideOutCurve;
-		private float holdTimeElapsed = 0;
 
-        /* ======================[#]  DEPENDENCIES  [#]====================== */
+        // ======================[#]  DEPENDENCIES  [#]======================
 
         [Header("Dependencies")]
 		[SerializeField] private Image musicToastPanel;
@@ -31,10 +30,11 @@ namespace BZApp.GUI.Components
 		[SerializeField] private TextMeshProUGUI songArtistText;
 		[SerializeField] private TextMeshProUGUI songAlbumText;
 
-		/* ======================[#]  INTERNAL REFERENCES  [#]====================== */
+		// ======================[#]  INTERNAL REFERENCES  [#]======================
 
 		// Internal values
 		private bool callForNext = false;
+		private float holdTimeElapsed = 0;
 
 		// Internal references
 		private MusicData queuedData;
@@ -43,7 +43,7 @@ namespace BZApp.GUI.Components
 		private Coroutine toastCoroutine;
 		private Coroutine toastSlideCoroutine;
 
-        /* ======================[#]  PUBLIC MUSIC TOAST API  [#]====================== */
+        // ======================[#]  PUBLIC MUSIC TOAST API  [#]======================
 
         /// <summary>
         /// Invoke the music toast panel to display song information.
@@ -73,7 +73,7 @@ namespace BZApp.GUI.Components
 				Debug.LogWarning("[WARNING] MusicToastManager: Cannot dismiss music toast as it is not currently active.");
 		}
 
-        /* ======================[#]  INTERNAL FUNCTIONS  [#]====================== */
+        // ======================[#]  INTERNAL FUNCTIONS  [#]======================
 
         private void SetMusicData(MusicData data)
 		{
@@ -89,7 +89,7 @@ namespace BZApp.GUI.Components
 			songAlbumText.text = data.AlbumName;
 		}
         
-		/* ======================[#]  SEQUENCE COROUTINES  [#]====================== */
+		// ======================[#]  INTERNAL COROUTINES  [#]======================
 
 		private IEnumerator PlayToastAnimation(MusicData dataToDisplay)
 		{

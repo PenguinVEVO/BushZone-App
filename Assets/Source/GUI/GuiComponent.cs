@@ -1,6 +1,6 @@
-//  GUI Component
-//  By Mitchel Smith
-//  November 2025
+//  Base GUI Component
+//  By PenguinVEVO
+//  Created November 2025
 
 using UnityEngine;
 

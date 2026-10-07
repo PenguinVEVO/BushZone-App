@@ -1,9 +1,9 @@
 //  Audio Manager
-//  By Mitchel Smith
+//  By PenguinVEVO
 //  Created October 2025
 
-using BZApp.GUI;
-using BZApp.GUI.Components;
+using System;
+using BZApp.Utilities;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace BZApp.Systems.Audio
     [AddComponentMenu("Audio/Audio Manager")]
     public class AudioManager : MonoBehaviour
     {
-        /* ======================[#]  CONFIGURATION  [#]====================== */
+        // ======================[#]  CONFIGURATION  [#]======================
 
         [Header("Audio Library")]
         [SerializeField] private List<MusicData> musicClips;
@@ -37,9 +37,9 @@ namespace BZApp.Systems.Audio
 
         [Header("Debug Settings")]
         [SerializeField, Range(0, 1)] private float globalVolume = 1f;
-        [SerializeField] private Utilities.LogOptions logOptions;
+        [SerializeField] private LogOptions logOptions;
         
-        /* ======================[#]  INTERNAL VALUES/REFERENCES  [#]====================== */
+        // ======================[#]  INTERNAL VALUES/REFERENCES  [#]====================== 
         
         // Internal values
         private float currentGlobalVolume;
@@ -56,10 +56,16 @@ namespace BZApp.Systems.Audio
         // Coroutine references
         private Coroutine musicFadeCoroutine;
         
-        // Accessor properties
+        // ======================[#]  EXPOSED PROPERTIES/EVENT HOOKS  [#]======================
+        
+        // Exposed properties
         public static AudioManager Instance { get; private set; }
         
-        /* ======================[#]  LIFECYCLE FUNCTIONS  [#]====================== */
+        // Events
+        public static event Action<MusicData> OnMusicStarted;
+        public static event Action OnMusicStopped;
+        
+        // ======================[#]  LIFECYCLE FUNCTIONS  [#]======================
 
         private void Awake()
         {
@@ -114,7 +120,7 @@ namespace BZApp.Systems.Audio
             if (currentGlobalVolume != globalVolume) UpdateGlobalVolumes();
         }
         
-        /* ======================[#]  PUBLIC AUDIO MANAGER API  [#]====================== */
+        // ======================[#]  PUBLIC AUDIO MANAGER API  [#]======================
 
         /// <summary>
         /// Play a music track from the music track library.
@@ -129,14 +135,14 @@ namespace BZApp.Systems.Audio
                     {
                         musicVoices[^1].clip = musicClips[id].SongClip;
                         musicVoices[^1].Play();
-                        GuiSystem.Instance.Get<MusicToastManager>().InvokeToast(musicClips[id]);
-                        if (logOptions.ShowInfoLogs) Debug.Log($"[INFO] AudioManager: Music clip with ID {id} now playing.");
+                        OnMusicStarted?.Invoke(musicClips[id]);
+                        if (logOptions.ShowInfoLogs) Debug.Log($"[INFO] Music clip with ID {id} now playing.");
                         return;
                     }
                     if (musicFadeCoroutine != null)
                         StopCoroutine(musicFadeCoroutine);
                     musicFadeCoroutine = StartCoroutine(SingleMusicVoiceFade(musicVoices[^1], musicClips[id]));
-                    if (logOptions.ShowInfoLogs) Debug.Log($"[INFO] AudioManager: Music clip with ID {id} now playing.");
+                    if (logOptions.ShowInfoLogs) Debug.Log($"[INFO] Music clip with ID {id} now playing.");
                     break;
                 case 2:
                     // If no voices are playing anything
@@ -145,7 +151,7 @@ namespace BZApp.Systems.Audio
                         musicVoices[0].clip = musicClips[id].SongClip;
                         musicVoices[0].volume = 1;
                         musicVoices[0].Play();
-                        GuiSystem.Instance.Get<MusicToastManager>().InvokeToast(musicClips[id]);
+                        OnMusicStarted?.Invoke(musicClips[id]);
                         return;
                     }
 
@@ -230,7 +236,7 @@ namespace BZApp.Systems.Audio
 
         public bool IsMusicFadeRunning() { return musicFadeCoroutine == null; }
         
-        /* ======================[#]  UTILITY FUNCTIONS  [#]====================== */
+        // ======================[#]  UTILITY FUNCTIONS  [#]======================
 
         // This is intended to allow for quickly changing the source of the volume.
         // TODO: Fix fades using absolute 0-1 values instead of the current global volume
@@ -239,7 +245,7 @@ namespace BZApp.Systems.Audio
             return currentGlobalVolume;
         }
         
-        /* ======================[#]  DEBUGGING FUNCTIONS  [#]====================== */
+        // ======================[#]  DEBUGGING FUNCTIONS  [#]======================
 
         private void UpdateGlobalVolumes()
         {
@@ -250,11 +256,11 @@ namespace BZApp.Systems.Audio
                 sfxVoice.volume = globalVolume;
         }
         
-        /* ======================[#]  SEQUENCE COROUTINES  [#]====================== */
+        // ======================[#]  INTERNAL COROUTINES  [#]======================
 
         private IEnumerator SingleMusicVoiceFade(AudioSource voiceToFade, MusicData newClipData)
         {
-            GuiSystem.Instance.Get<MusicToastManager>().DismissToast(); // This also signals to the user that the music is exiting
+            OnMusicStopped?.Invoke();
 
             float timeElapsed = 0;
             float endTime = musicFadeOutCurve.keys[^1].time;
@@ -270,7 +276,7 @@ namespace BZApp.Systems.Audio
             voiceToFade.clip = newClipData.SongClip;
             voiceToFade.volume = 1;
             voiceToFade.Play();
-            GuiSystem.Instance.Get<MusicToastManager>().InvokeToast(newClipData);
+            OnMusicStarted?.Invoke(newClipData);
             musicFadeCoroutine = null;
         }
 
@@ -285,7 +291,7 @@ namespace BZApp.Systems.Audio
 
             newVoice.clip = newClipData.SongClip;
             newVoice.Play();
-            GuiSystem.Instance.Get<MusicToastManager>().InvokeToast(newClipData);
+            OnMusicStarted?.Invoke(newClipData);
             while (timeElapsed < latestEndTime)
             {
                 oldVoice.volume = Mathf.Clamp(musicFadeOutCurve.Evaluate(timeElapsed), 0, 1);

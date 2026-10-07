@@ -1812,6 +1812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000458128}
   - component: {fileID: 2000458130}
+  - component: {fileID: 2000458132}
   - component: {fileID: 2000458129}
   - component: {fileID: 2000458131}
   m_Layer: 0
@@ -2005,6 +2006,19 @@ MonoBehaviour:
   popupBackgroundComponent: {fileID: 2005037193}
   popupTextComponent: {fileID: 2005037191}
   exitButtonComponent: {fileID: 2005037190}
+--- !u!114 &2000458132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000458127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 807bf5361ff153160aa05151d31da396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  config: {fileID: 11400000, guid: 121635035f009efa3b8cf35713ad35ab, type: 2}
 --- !u!1001 &2005037188
 PrefabInstance:
   m_ObjectHideFlags: 0

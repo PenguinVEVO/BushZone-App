@@ -1,5 +1,5 @@
 //  Selectables Cursor Manager
-//  By Mitchel Smith
+//  By PenguinVEVO
 //  Created February 2026
 //
 //  =============================[!]  AI ASSISTANCE DISCLAIMER  [!]=============================
@@ -20,7 +20,7 @@ namespace BZApp.GUI.Components
     [AddComponentMenu("UI/GUI Components/SelectableCursorManager")]
 	public class SelectableCursorManager : GuiComponent
 	{
-        /* ======================[#]  CONFIGURATION  [#]====================== */
+        // ======================[#]  CONFIGURATION  [#]======================
 
 		[Header("General Cursor Settings")]
 		[SerializeField] private Vector2 cursorSizePadding = new(50, 50);
@@ -32,7 +32,7 @@ namespace BZApp.GUI.Components
 		[SerializeField] private AnimationCurve cursorIdleAnimationCurve;
 		[SerializeField] private AnimationCurve cursorMoveCurve;
 		
-        /* ======================[#]  DEPENDENCIES  [#]====================== */
+        // ======================[#]  DEPENDENCIES  [#]======================
 
 		[Header("Prefab Dependencies")]
 		[SerializeField] private GameObject cursorPrefab;
@@ -41,12 +41,12 @@ namespace BZApp.GUI.Components
 		[SerializeField] private Image mouseBlockerImage;
 		[SerializeField] private GameObject cursorParentObject;
 
-		/* ======================[#]  DEBUG SETTINGS  [#]====================== */
+		// ======================[#]  DEBUG SETTINGS  [#]======================
 
 		[Header("Debug Settings")]
 		[SerializeField] private LogOptions logOptions = new();
 
-        /* ======================[#]  INTERNAL VARIABLES  [#]====================== */
+        // ======================[#]  INTERNAL VARIABLES  [#]======================
 
         // Internal flags
         public bool IsEngaged { get; private set; }
@@ -60,7 +60,7 @@ namespace BZApp.GUI.Components
 		private Coroutine cursorMoveCoroutine;
 		private Coroutine cursorIdleCoroutine;
 
-        /* ======================[#]  SELECTABLES FUNCTIONS  [#]====================== */
+        // ======================[#]  SELECTABLES FUNCTIONS  [#]======================
 
 		/// <summary>
 		/// Engage the cursor onto the current Selectable.
@@ -158,7 +158,7 @@ namespace BZApp.GUI.Components
             };
         }
 
-        /* ======================[#]  SELECTABLE EVENTTRIGGER HOOKS  [#]====================== */
+        // ======================[#]  SELECTABLE EVENT TRIGGER HOOKS  [#]======================
 
         public void OnMove(BaseEventData eventData)
 		{
@@ -173,7 +173,7 @@ namespace BZApp.GUI.Components
 			Debug.LogError($"[ERROR] {GetType()}: OnMove called by unsupported event trigger! Event trigger must pass through AxisEventData.");
         }
 
-        /* ======================[#]  COROUTINES  [#]====================== */
+        // ======================[#]  INTERNAL COROUTINES  [#]======================
 
         private IEnumerator PlayCursorEngageAnimation(AnimationCurve curve, bool disengageCursor)
 		{

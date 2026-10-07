@@ -1,0 +1,16 @@
+{
+    "name": "BZApp.Audio",
+    "rootNamespace": "BZApp.Audio",
+    "references": [
+        "GUID:8a17ab3b9cfff459a9c60b95efef0d26"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

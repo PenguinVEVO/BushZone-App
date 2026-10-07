@@ -1,5 +1,5 @@
 //  GUI System
-//  By Mitchel Smith
+//  By PenguinVEVO
 //  Created November 2025
 //
 //  =============================[!]  AI ASSISTANCE DISCLAIMER  [!]=============================
