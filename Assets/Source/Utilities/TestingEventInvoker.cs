@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-namespace Mitchel.Utilities
+namespace BZApp.Utilities
 {
     public class TestingEventInvoker : MonoBehaviour
     {
@@ -34,8 +34,8 @@ namespace Mitchel.Utilities
             {
                 if (testingEvents[i].inputToActivate == null)
                 {
-                    Debug.LogError($"[ERROR] {GetType()}: Testing Event at index {i} contains an empty InputAction and cannot be invoked! \n" +
-                                   $"Ensure all Testing Events are correctly set up before hitting Play!");
+                    Debug.LogError($"[ERROR] Testing Event at index {i} contains an empty InputAction and cannot be invoked!" +
+                                    "Ensure all Testing Events are correctly set up before hitting Play!");
                     return;
                 }
 

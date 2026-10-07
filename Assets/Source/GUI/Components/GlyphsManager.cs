@@ -22,6 +22,8 @@ namespace BZApp.GUI.Components
 		{
 			base.Awake();
 			
+			// Input device dictionaries initialisation
+			
 		}
 		
 		private void Start()

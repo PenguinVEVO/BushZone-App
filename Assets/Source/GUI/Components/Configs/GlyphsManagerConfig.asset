@@ -12,10 +12,886 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 732ab6127d901a34c98421c4f3e5b3d0, type: 3}
   m_Name: GlyphsManagerConfig
   m_EditorClassIdentifier: 
-  keyboardGlyphSprites: []
-  mouseGlyphSprites: []
-  gamepadGlyphSprites: []
-  xboxGlyphSprites: []
-  playstationGlyphSprites: []
-  switchProGlyphSprites: []
-  errorGlyphSprite: {fileID: 0}
+  KeyboardGlyphSprites:
+  - GlyphPath: /Keyboard/anyKey
+    GlyphName: anyKey
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/escape
+    GlyphName: escape
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/space
+    GlyphName: space
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/enter
+    GlyphName: enter
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/tab
+    GlyphName: tab
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/backquote
+    GlyphName: backquote
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/quote
+    GlyphName: quote
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/semicolon
+    GlyphName: semicolon
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/comma
+    GlyphName: comma
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/period
+    GlyphName: period
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/slash
+    GlyphName: slash
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/backslash
+    GlyphName: backslash
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/leftBracket
+    GlyphName: leftBracket
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/rightBracket
+    GlyphName: rightBracket
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/minus
+    GlyphName: minus
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/equals
+    GlyphName: equals
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/upArrow
+    GlyphName: upArrow
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/downArrow
+    GlyphName: downArrow
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/leftArrow
+    GlyphName: leftArrow
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/rightArrow
+    GlyphName: rightArrow
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/a
+    GlyphName: a
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/b
+    GlyphName: b
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/c
+    GlyphName: c
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/d
+    GlyphName: d
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/e
+    GlyphName: e
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/g
+    GlyphName: g
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/h
+    GlyphName: h
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/i
+    GlyphName: i
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/j
+    GlyphName: j
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/k
+    GlyphName: k
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/l
+    GlyphName: l
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/m
+    GlyphName: m
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/n
+    GlyphName: n
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/o
+    GlyphName: o
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/p
+    GlyphName: p
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/q
+    GlyphName: q
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/r
+    GlyphName: r
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/s
+    GlyphName: s
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/t
+    GlyphName: t
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/u
+    GlyphName: u
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/v
+    GlyphName: v
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/w
+    GlyphName: w
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/z
+    GlyphName: z
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/
+    GlyphName: 1
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/
+    GlyphName: 2
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/
+    GlyphName: 3
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/
+    GlyphName: 4
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/
+    GlyphName: 5
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/
+    GlyphName: 6
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/
+    GlyphName: 7
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/
+    GlyphName: 8
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/
+    GlyphName: 9
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/
+    GlyphName: 0
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/leftShift
+    GlyphName: leftShift
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/rightShift
+    GlyphName: rightShift
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/shift
+    GlyphName: shift
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/leftAlt
+    GlyphName: leftAlt
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/rightAlt
+    GlyphName: rightAlt
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/alt
+    GlyphName: alt
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/leftCtrl
+    GlyphName: leftCtrl
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/rightCtrl
+    GlyphName: rightCtrl
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/ctrl
+    GlyphName: ctrl
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/leftMeta
+    GlyphName: leftMeta
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/rightMeta
+    GlyphName: rightMeta
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/contextMenu
+    GlyphName: contextMenu
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/backspace
+    GlyphName: backspace
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/pageDown
+    GlyphName: pageDown
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/pageUp
+    GlyphName: pageUp
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/home
+    GlyphName: home
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/end
+    GlyphName: end
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/insert
+    GlyphName: insert
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/delete
+    GlyphName: delete
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/capsLock
+    GlyphName: capsLock
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numLock
+    GlyphName: numLock
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/printScreen
+    GlyphName: printScreen
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/scrollLock
+    GlyphName: scrollLock
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/pause
+    GlyphName: pause
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpadEnter
+    GlyphName: numpadEnter
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpadDivide
+    GlyphName: numpadDivide
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpadMultiply
+    GlyphName: numpadMultiply
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpadPlus
+    GlyphName: numpadPlus
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpadMinus
+    GlyphName: numpadMinus
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpadPeriod
+    GlyphName: numpadPeriod
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpadEquals
+    GlyphName: numpadEquals
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpad
+    GlyphName: numpad1
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpad
+    GlyphName: numpad2
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpad
+    GlyphName: numpad3
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpad
+    GlyphName: numpad4
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpad
+    GlyphName: numpad5
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpad
+    GlyphName: numpad6
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpad
+    GlyphName: numpad7
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpad
+    GlyphName: numpad8
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpad
+    GlyphName: numpad9
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/numpad
+    GlyphName: numpad0
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f1
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f2
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f3
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f4
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f5
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f6
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f7
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f8
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f9
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f10
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f11
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f12
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/OEM
+    GlyphName: OEM1
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/OEM
+    GlyphName: OEM2
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/OEM
+    GlyphName: OEM3
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/OEM
+    GlyphName: OEM4
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/OEM
+    GlyphName: OEM5
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f13
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f14
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f15
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f16
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f17
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f18
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f19
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f20
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f21
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f22
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f23
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/f
+    GlyphName: f24
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Keyboard/IMESelected
+    GlyphName: IMESelected
+    GlyphSprite: {fileID: 0}
+  MouseGlyphSprites:
+  - GlyphPath: /Mouse/position
+    GlyphName: position
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/delta
+    GlyphName: delta
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/scroll
+    GlyphName: scroll
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/press
+    GlyphName: press
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/leftButton
+    GlyphName: leftButton
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/rightButton
+    GlyphName: rightButton
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/middleButton
+    GlyphName: middleButton
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/forwardButton
+    GlyphName: forwardButton
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/backButton
+    GlyphName: backButton
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/pressure
+    GlyphName: pressure
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/radius
+    GlyphName: radius
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/pointerId
+    GlyphName: pointerId
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/displayIndex
+    GlyphName: displayIndex
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/clickCount
+    GlyphName: clickCount
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/position/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/position/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/delta/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/delta/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/delta/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/delta/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/delta/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/delta/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/scroll/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/scroll/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/scroll/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/scroll/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/scroll/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/scroll/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/radius/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Mouse/radius/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  GamepadGlyphSprites:
+  - GlyphPath: /Gamepad/dpad
+    GlyphName: dpad
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/buttonSouth
+    GlyphName: buttonSouth
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/buttonWest
+    GlyphName: buttonWest
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/buttonNorth
+    GlyphName: buttonNorth
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/buttonEast
+    GlyphName: buttonEast
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/leftStickPress
+    GlyphName: leftStickPress
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/rightStickPress
+    GlyphName: rightStickPress
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/leftShoulder
+    GlyphName: leftShoulder
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/rightShoulder
+    GlyphName: rightShoulder
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/start
+    GlyphName: start
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/select
+    GlyphName: select
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/leftStick
+    GlyphName: leftStick
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/rightStick
+    GlyphName: rightStick
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/leftTrigger
+    GlyphName: leftTrigger
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/rightTrigger
+    GlyphName: rightTrigger
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/dpad/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/dpad/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/dpad/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/dpad/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/dpad/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/dpad/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/leftStick/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/leftStick/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/leftStick/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/leftStick/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/leftStick/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/leftStick/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/rightStick/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/rightStick/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/rightStick/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/rightStick/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/rightStick/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /Gamepad/rightStick/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  XboxGlyphSprites:
+  - GlyphPath: /XInputController/buttonSouth
+    GlyphName: buttonSouth
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/buttonEast
+    GlyphName: buttonEast
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/buttonWest
+    GlyphName: buttonWest
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/buttonNorth
+    GlyphName: buttonNorth
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/leftShoulder
+    GlyphName: leftShoulder
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/rightShoulder
+    GlyphName: rightShoulder
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/leftTrigger
+    GlyphName: leftTrigger
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/rightTrigger
+    GlyphName: rightTrigger
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/start
+    GlyphName: start
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/select
+    GlyphName: select
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/dpad
+    GlyphName: dpad
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/leftStickPress
+    GlyphName: leftStickPress
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/rightStickPress
+    GlyphName: rightStickPress
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/leftStick
+    GlyphName: leftStick
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/rightStick
+    GlyphName: rightStick
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/dpad/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/dpad/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/dpad/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/dpad/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/dpad/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/dpad/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/leftStick/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/leftStick/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/leftStick/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/leftStick/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/leftStick/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/leftStick/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/rightStick/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/rightStick/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/rightStick/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/rightStick/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/rightStick/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /XInputController/rightStick/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  PlaystationGlyphSprites:
+  - GlyphPath: /DualShockGamepad/buttonWest
+    GlyphName: buttonWest
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/buttonNorth
+    GlyphName: buttonNorth
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/buttonEast
+    GlyphName: buttonEast
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/buttonSouth
+    GlyphName: buttonSouth
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/touchpadButton
+    GlyphName: touchpadButton
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/start
+    GlyphName: start
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/select
+    GlyphName: select
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/leftShoulder
+    GlyphName: leftShoulder
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/rightShoulder
+    GlyphName: rightShoulder
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/leftTrigger
+    GlyphName: leftTrigger
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/rightTrigger
+    GlyphName: rightTrigger
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/leftStickPress
+    GlyphName: leftStickPress
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/rightStickPress
+    GlyphName: rightStickPress
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/dpad
+    GlyphName: dpad
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/leftStick
+    GlyphName: leftStick
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/rightStick
+    GlyphName: rightStick
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/dpad/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/dpad/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/dpad/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/dpad/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/dpad/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/dpad/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/leftStick/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/leftStick/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/leftStick/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/leftStick/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/leftStick/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/leftStick/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/rightStick/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/rightStick/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/rightStick/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/rightStick/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/rightStick/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /DualShockGamepad/rightStick/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  SwitchProGlyphSprites:
+  - GlyphPath: /SwitchProControllerHID/leftStick
+    GlyphName: leftStick
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/rightStick
+    GlyphName: rightStick
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/dpad
+    GlyphName: dpad
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/buttonWest
+    GlyphName: buttonWest
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/buttonNorth
+    GlyphName: buttonNorth
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/buttonSouth
+    GlyphName: buttonSouth
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/buttonEast
+    GlyphName: buttonEast
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/leftShoulder
+    GlyphName: leftShoulder
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/rightShoulder
+    GlyphName: rightShoulder
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/leftStickPress
+    GlyphName: leftStickPress
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/rightStickPress
+    GlyphName: rightStickPress
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/leftTrigger
+    GlyphName: leftTrigger
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/rightTrigger
+    GlyphName: rightTrigger
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/start
+    GlyphName: start
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/select
+    GlyphName: select
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/capture
+    GlyphName: capture
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/home
+    GlyphName: home
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/leftStick/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/leftStick/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/leftStick/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/leftStick/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/leftStick/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/leftStick/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/rightStick/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/rightStick/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/rightStick/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/rightStick/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/rightStick/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/rightStick/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/dpad/x
+    GlyphName: x
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/dpad/y
+    GlyphName: y
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/dpad/up
+    GlyphName: up
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/dpad/down
+    GlyphName: down
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/dpad/left
+    GlyphName: left
+    GlyphSprite: {fileID: 0}
+  - GlyphPath: /SwitchProControllerHID/dpad/right
+    GlyphName: right
+    GlyphSprite: {fileID: 0}
+  ErrorGlyphSprite: {fileID: 0}
