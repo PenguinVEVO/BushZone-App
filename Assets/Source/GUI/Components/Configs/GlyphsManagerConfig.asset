@@ -24,7 +24,7 @@ MonoBehaviour:
     GlyphSprite: {fileID: 0}
   - GlyphPath: /Keyboard/enter
     GlyphName: enter
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/tab
     GlyphName: tab
     GlyphSprite: {fileID: 0}
@@ -491,7 +491,7 @@ MonoBehaviour:
     GlyphSprite: {fileID: 0}
   - GlyphPath: /Gamepad/buttonSouth
     GlyphName: buttonSouth
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 5df541ec8cea8ed4b9e28702b971af42, type: 3}
   - GlyphPath: /Gamepad/buttonWest
     GlyphName: buttonWest
     GlyphSprite: {fileID: 0}

@@ -1,13 +1,16 @@
+//  Config for Cross-Device Glyphs Manager
+//  By PenguinVEVO
+//  Created October 2026
+
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BZApp.GUI.Components.Configs
+namespace BZApp.GUI.Components
 {
     [CreateAssetMenu(fileName = "GlyphsManagerConfig", menuName = "UI/GUI Components/Configs/GlyphsManagerConfig")]
     public class GlyphsManagerConfig : ScriptableObject
     {
-        // Glyph collections
         public List<GlyphEntry> KeyboardGlyphSprites = new();
         public List<GlyphEntry> MouseGlyphSprites = new();
         public List<GlyphEntry> GamepadGlyphSprites = new();
@@ -16,11 +19,7 @@ namespace BZApp.GUI.Components.Configs
         public List<GlyphEntry> SwitchProGlyphSprites = new();
         public Sprite ErrorGlyphSprite;
         
-        // Accessor properties
-        public string[] ControllerLayouts => controllerLayouts;
-        
-        // Controller layout collections
-        private readonly string[] controllerLayouts =
+        public string[] ControllerLayouts { get; } =
         {
             "Keyboard",
             "Mouse",
@@ -29,7 +28,7 @@ namespace BZApp.GUI.Components.Configs
             "DualShockGamepad",
             "SwitchProControllerHID"
         };
-        
+
         public List<GlyphEntry> GetGlyphList(string layoutName) => layoutName switch
         {
             "Keyboard" => KeyboardGlyphSprites,
@@ -38,7 +37,7 @@ namespace BZApp.GUI.Components.Configs
             "XInputController" => XboxGlyphSprites,
             "DualShockGamepad" => PlaystationGlyphSprites,
             "SwitchProControllerHID" => SwitchProGlyphSprites,
-            _ => throw new ArgumentException($"Invalid controller layout: {layoutName}")
+            _ => null
         };
     }
     

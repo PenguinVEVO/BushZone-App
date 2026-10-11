@@ -1,6 +1,10 @@
+//  Custom Editor of Config for Cross-Device Glyphs Manager
+//  By PenguinVEVO
+//  Created October 2026
+
 using System.Linq;
 using System.Text.RegularExpressions;
-using BZApp.GUI.Components.Configs;
+using BZApp.GUI.Components;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -20,7 +24,13 @@ namespace BZAppEditor.GUI
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
+            if (GUILayout.Button("Generate Glyph Dictionaries"))
+            {
+                
+            }
+            
             EditorGUILayout.Space(5);
+            EditorGUILayout.LabelField("Automation Controls", "Automation Controls", UnityEngine.GUI.skin.horizontalSlider);
             if (GUILayout.Button("Generate Control Entries"))
                 AutofillLists();
             if (GUILayout.Button("Clear Control Entries"))

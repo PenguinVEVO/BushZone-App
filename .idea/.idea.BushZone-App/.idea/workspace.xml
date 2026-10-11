@@ -3,22 +3,18 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
   <component name="CMakeSettings">
     <configurations />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df7d10df-fd64-45f7-933e-378909d71b6c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BushZone-App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BushZone-App/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/GUI/BZApp-Editor.GUI.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/GUI/BZApp-Editor.GUI.asmdef" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Editor/GUI/Components/Config/GlyphsManagerConfigEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/GUI/Components/Config/GlyphsManagerConfigEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/GlyphsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Components/GlyphsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/MainScheme.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/MainScheme.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Utilities/ConsoleLogger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Utilities/ConsoleLogger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Utilities/ExtColour.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Utilities/ExtColour.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/Utilities/TestingEventInvoker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Utilities/TestingEventInvoker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="10" />
+    <option name="cachedIndexableFilesCount" value="4" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
@@ -43,61 +39,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0005718931961827" />
-      <entry key="S2" value="1.5612822772916268" />
-      <entry key="S5" value="3.542601860513017" />
-      <entry key="S10" value="5.560249089815781" />
-      <entry key="S30" value="8.079899507570588" />
-      <entry key="S60" value="9.028064320258919" />
-      <entry key="M2" value="10.355931110901208" />
-      <entry key="M5" value="16.899709669618414" />
-      <entry key="M10" value="33.265073448305074" />
-      <entry key="M15" value="51.99759253526748" />
-      <entry key="M30" value="97.16963564887565" />
-      <entry key="H1" value="154.75268008308868" />
-      <entry key="H2" value="286.12916907606103" />
-      <entry key="H4" value="664.1731690972398" />
-      <entry key="D1" value="2260.944087868236" />
-      <entry key="W1" value="2920.330047898571" />
+      <entry key="MS100" value="1.0000000000007863" />
+      <entry key="MS500" value="1.003794169904715" />
+      <entry key="S2" value="1.2536769305789375" />
+      <entry key="S5" value="2.2711595679971137" />
+      <entry key="S10" value="5.416366537994866" />
+      <entry key="S30" value="15.83014838972745" />
+      <entry key="S60" value="26.88487694200191" />
+      <entry key="M2" value="42.01910466117743" />
+      <entry key="M5" value="72.7988336810411" />
+      <entry key="M10" value="117.42888823750168" />
+      <entry key="M15" value="155.42973218840092" />
+      <entry key="M30" value="246.1229331812924" />
+      <entry key="H1" value="375.2020449542664" />
+      <entry key="H2" value="526.5425333555495" />
+      <entry key="H4" value="736.1399514018431" />
+      <entry key="D1" value="2443.383088903724" />
+      <entry key="W1" value="3710.848900294049" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="9.471724596419317E-33" />
-      <entry key="MS500" value="4.004223785784512E-7" />
-      <entry key="S2" value="0.034068646368081365" />
-      <entry key="S5" value="0.38090744276569555" />
-      <entry key="S10" value="0.8683309170079241" />
-      <entry key="S30" value="1.512982873240762" />
-      <entry key="S60" value="1.7671839269484408" />
-      <entry key="M2" value="2.175357233781902" />
-      <entry key="M5" value="3.7048031437955364" />
-      <entry key="M10" value="6.730155250745425" />
-      <entry key="M15" value="9.740194801190826" />
-      <entry key="M30" value="16.21421632579155" />
-      <entry key="H1" value="23.24211823187998" />
-      <entry key="H2" value="34.03128374542848" />
-      <entry key="H4" value="52.580091459143944" />
-      <entry key="D1" value="97.53145416727463" />
-      <entry key="W1" value="111.41363106763569" />
+      <entry key="MS100" value="1.0859227097023086E-15" />
+      <entry key="MS500" value="0.0010187537100836684" />
+      <entry key="S2" value="0.21683477692103384" />
+      <entry key="S5" value="0.7941208084474677" />
+      <entry key="S10" value="1.3827423279661861" />
+      <entry key="S30" value="2.636356758211723" />
+      <entry key="S60" value="4.241018962117332" />
+      <entry key="M2" value="7.0469669066047995" />
+      <entry key="M5" value="12.910868504617437" />
+      <entry key="M10" value="20.675383348492133" />
+      <entry key="M15" value="26.994957570571874" />
+      <entry key="M30" value="40.99606324084747" />
+      <entry key="H1" value="59.847199969920275" />
+      <entry key="H2" value="82.15371509822569" />
+      <entry key="H4" value="109.49123414570597" />
+      <entry key="D1" value="207.72028473670582" />
+      <entry key="W1" value="255.87600585613546" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.7042994594525148E-15" />
-      <entry key="MS500" value="0.0016123055125820429" />
-      <entry key="S2" value="0.7004388934076402" />
-      <entry key="S5" value="3.1490607662091534" />
-      <entry key="S10" value="5.809461085333635" />
-      <entry key="S30" value="9.280852972485208" />
-      <entry key="S60" value="10.619092120235484" />
-      <entry key="M2" value="12.433245496191706" />
-      <entry key="M5" value="20.55199685837953" />
-      <entry key="M10" value="39.954235837939365" />
-      <entry key="M15" value="61.6999851805774" />
-      <entry key="M30" value="113.3528784908894" />
-      <entry key="H1" value="177.97148063693274" />
-      <entry key="H2" value="320.14152921203834" />
-      <entry key="H4" value="716.7370418655179" />
-      <entry key="D1" value="2358.4697430058604" />
-      <entry key="W1" value="3031.742700220379" />
+      <entry key="MS100" value="8.801274049972794E-4" />
+      <entry key="MS500" value="0.2475871574483481" />
+      <entry key="S2" value="1.0811682036375483" />
+      <entry key="S5" value="2.7960503817830857" />
+      <entry key="S10" value="6.59226422066913" />
+      <entry key="S30" value="18.31289718064846" />
+      <entry key="S60" value="30.98134338182497" />
+      <entry key="M2" value="48.93683924984731" />
+      <entry key="M5" value="85.59379802856061" />
+      <entry key="M10" value="137.98011522058215" />
+      <entry key="M15" value="182.29970928512816" />
+      <entry key="M30" value="287.00779568631805" />
+      <entry key="H1" value="434.9652030437018" />
+      <entry key="H2" value="608.640264609982" />
+      <entry key="H4" value="845.5952752039271" />
+      <entry key="D1" value="2651.091956005686" />
+      <entry key="W1" value="3966.7228509475985" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -109,30 +105,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "development__centralised-input",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development__centralised-input&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/Unity" />
@@ -156,12 +152,10 @@
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
+      <option name="coreClr" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="projectPathOnTarget" />
-      <option name="runtimes">
-        <list />
-      </option>
       <option name="selectedOptions">
         <list />
       </option>
