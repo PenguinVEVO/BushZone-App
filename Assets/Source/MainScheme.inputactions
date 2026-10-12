@@ -357,7 +357,7 @@
                     "path": "<XInputController>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Xbox Controller",
+                    "groups": "XInputController",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -368,7 +368,7 @@
                     "path": "<XInputController>/dpad",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Xbox Controller",
+                    "groups": "XInputController",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -379,7 +379,7 @@
                     "path": "<DualShockGamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";PlayStation Controller",
+                    "groups": "DualShockGamepad",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -390,7 +390,7 @@
                     "path": "<DualShockGamepad>/dpad",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";PlayStation Controller",
+                    "groups": "DualShockGamepad",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -401,7 +401,7 @@
                     "path": "<SwitchProControllerHID>/leftStick",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Switch Pro Controller",
+                    "groups": "SwitchProControllerHID",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -412,7 +412,7 @@
                     "path": "<SwitchProControllerHID>/dpad",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Switch Pro Controller",
+                    "groups": "SwitchProControllerHID",
                     "action": "Navigate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -467,7 +467,7 @@
                     "path": "<XInputController>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Xbox Controller",
+                    "groups": "XInputController",
                     "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -478,7 +478,7 @@
                     "path": "<DualShockGamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";PlayStation Controller",
+                    "groups": "DualShockGamepad",
                     "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -489,7 +489,7 @@
                     "path": "<SwitchProControllerHID>/buttonEast",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Switch Pro Controller",
+                    "groups": "SwitchProControllerHID",
                     "action": "Confirm",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -533,7 +533,7 @@
                     "path": "<XInputController>/buttonEast",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Xbox Controller",
+                    "groups": "XInputController",
                     "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -544,7 +544,7 @@
                     "path": "<DualShockGamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";PlayStation Controller",
+                    "groups": "DualShockGamepad",
                     "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -555,7 +555,7 @@
                     "path": "<SwitchProControllerHID>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Switch Pro Controller",
+                    "groups": "SwitchProControllerHID",
                     "action": "Cancel",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -592,8 +592,8 @@
             ]
         },
         {
-            "name": "Xbox Controller",
-            "bindingGroup": "Xbox Controller",
+            "name": "XInputController",
+            "bindingGroup": "XInputController",
             "devices": [
                 {
                     "devicePath": "<XInputController>",
@@ -603,8 +603,8 @@
             ]
         },
         {
-            "name": "PlayStation Controller",
-            "bindingGroup": "PlayStation Controller",
+            "name": "DualShockGamepad",
+            "bindingGroup": "DualShockGamepad",
             "devices": [
                 {
                     "devicePath": "<DualShockGamepad>",
@@ -614,8 +614,8 @@
             ]
         },
         {
-            "name": "Switch Pro Controller",
-            "bindingGroup": "Switch Pro Controller",
+            "name": "SwitchProControllerHID",
+            "bindingGroup": "SwitchProControllerHID",
             "devices": [
                 {
                     "devicePath": "<SwitchProControllerHID>",

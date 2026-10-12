@@ -24,11 +24,6 @@ namespace BZAppEditor.GUI
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
-            if (GUILayout.Button("Generate Glyph Dictionaries"))
-            {
-                
-            }
-            
             EditorGUILayout.Space(5);
             EditorGUILayout.LabelField("Automation Controls", "Automation Controls", UnityEngine.GUI.skin.horizontalSlider);
             if (GUILayout.Button("Generate Control Entries"))

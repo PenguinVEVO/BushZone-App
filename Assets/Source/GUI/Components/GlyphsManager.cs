@@ -6,6 +6,8 @@
 //  This script was created with the help of ChatGPT. The areas assisted with AI are as follows:
 //  • How to detect for input device changes with project-wide input actions:
 //    https://share.google/aimode/kbDbzVPeAgnmNYEFK
+//  • How to find the control scheme from an InputAction:
+//    https://share.google/aimode/B45qbcHOgVUsvnVtw
 //  ============================================================================================
 
 using System.Collections.Generic;
@@ -29,17 +31,20 @@ namespace BZApp.GUI.Components
 
 		private List<TrackableGlyph> trackedGlyphs = new();
 
-		private string lastKnownDevice;
+		private InputDevice lastKnownDevice;
+		private string lastKnownScheme;
 
 		// ======================[#]  LIFECYCLE FUNCTIONS  [#]======================
 		
 		protected override void Awake() 
 		{
 			base.Awake();
+			lastKnownDevice = InputSystem.devices[0];
+			lastKnownScheme = lastKnownDevice.layout;
+			Debug.Log(lastKnownScheme);
+			
 			debugImageToTrack.sprite = GetGlyph("Menus", "Confirm");
 			StartTrackingGlyph(new TrackableGlyph(debugImageToTrack, "Menus", "Confirm"));
-			
-			lastKnownDevice = InputSystem.devices[0].name;
 		}
 
 		private void OnEnable()
@@ -68,27 +73,23 @@ namespace BZApp.GUI.Components
 	        InputControl[] controls = targetAction.controls.ToArray();
 	        foreach (InputControl control in controls)
 	        {
-		        foreach (InputDevice device in InputSystem.devices)
-		        {
-			        Debug.Log($"Balls: {control.device} / {device}");
-			        if (control.device != device) continue;
+		        Debug.Log($"Balls: {control.device.name} / {lastKnownDevice.name}");
+		        if (control.device.name != lastKnownDevice.name) continue;
+		        List<GlyphEntry> foundList = config.GetGlyphList(lastKnownDevice.name);
+		        if (foundList == null)
+			        foreach (var layout in config.ControllerLayouts)
+			        {
+				        if (!InputSystem.IsFirstLayoutBasedOnSecond(lastKnownDevice.layout, layout)) continue;
+				        foundList = config.GetGlyphList(layout);
+				        break;
+			        }
+		        if (foundList == null) break; // If it's still null, just end the search
 			        
-			        List<GlyphEntry> foundList = config.GetGlyphList(device.name);
-			        if (foundList == null)
-				        foreach (var platform in config.ControllerLayouts)
-				        {
-					        if (!InputSystem.IsFirstLayoutBasedOnSecond(device.layout, platform)) continue;
-					        foundList = config.GetGlyphList(platform);
-					        break;
-				        }
-			        if (foundList == null) break; // If it's still null, just end the search
-			        
-			        // Note: only the first control per device will be returned. This acts as the "primary" control.
-			        Sprite foundSprite = foundList.Find(g => g.GlyphPath == control.path).GlyphSprite;
-			        if (logOptions.ShowInfoLogs) 
-				        Debug.Log($"[INFO] Returned glyph {foundSprite.name} for input action \"{actionName}\".");
-			        return foundSprite;
-		        }
+		        // Note: only the first control per device will be returned. This acts as the "primary" control.
+		        Sprite foundSprite = foundList.Find(g => g.GlyphPath == control.path).GlyphSprite;
+		        if (logOptions.ShowInfoLogs) 
+			        Debug.Log($"[INFO] Returned glyph {foundSprite.name} for input action \"{actionName}\".");
+		        return foundSprite;
 	        }
 
 	        Debug.LogError($"[ERROR] Glyph could not be found at input action \"{actionName}\" within the connected control schemes.");
@@ -127,9 +128,14 @@ namespace BZApp.GUI.Components
         {
 	        if (change != InputActionChange.ActionPerformed) return;
 	        InputAction action = (InputAction)obj;
+	        int bindingIndex = action.GetBindingIndexForControl(action.activeControl);
+	        if (bindingIndex == -1) return;
+	        lastKnownScheme = action.bindings[bindingIndex].groups;
+	        Debug.Log(lastKnownScheme);
+	        
 	        InputDevice newDevice = action.activeControl.device;
-	        if (newDevice.name == lastKnownDevice) return;
-	        lastKnownDevice = newDevice.name;
+	        if (newDevice.name == lastKnownDevice.name) return;
+	        lastKnownDevice = newDevice;
 	        UpdateTrackedGlyphs();
         }
 
