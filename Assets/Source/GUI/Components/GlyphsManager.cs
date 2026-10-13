@@ -11,6 +11,7 @@
 //  ============================================================================================
 
 using System.Collections.Generic;
+using System.Linq;
 using BZApp.Utilities;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -24,7 +25,6 @@ namespace BZApp.GUI.Components
         // ======================[#]  CONFIGURATION  [#]======================
 		
 		[SerializeField] private GlyphsManagerConfig config;
-		[SerializeField] private Image debugImageToTrack;
 		[SerializeField] private LogOptions logOptions;
 		
 		// ======================[#]  INTERNAL VARIABLES/REFERENCES  [#]======================
@@ -41,10 +41,6 @@ namespace BZApp.GUI.Components
 			base.Awake();
 			lastKnownDevice = InputSystem.devices[0];
 			lastKnownScheme = lastKnownDevice.layout;
-			Debug.Log(lastKnownScheme);
-			
-			debugImageToTrack.sprite = GetGlyph("Menus", "Confirm");
-			StartTrackingGlyph(new TrackableGlyph(debugImageToTrack, "Menus", "Confirm"));
 		}
 
 		private void OnEnable()
@@ -57,6 +53,7 @@ namespace BZApp.GUI.Components
 
         public Sprite GetGlyph(string actionMapName, string actionName)
         {
+	        // Turn the parameters into tangible stuff that the function can work with
 	        InputActionMap targetActionMap = InputSystem.actions.FindActionMap(actionMapName);
 	        if (targetActionMap == null)
 	        {
@@ -70,29 +67,53 @@ namespace BZApp.GUI.Components
 		        return config.ErrorGlyphSprite;
 	        }
 	        
+	        // Get all the supported devices of the current control scheme (to get the glyph via the scheme rather than specific device)
+	        InputControlScheme currentScheme = InputSystem.actions.controlSchemes.FirstOrDefault(s => s.SupportsDevice(lastKnownDevice));
+	        var supportedDeviceNames = new string[currentScheme.deviceRequirements.Count];
+	        int iteration = 0;
+	        supportedDeviceNames[iteration++] = lastKnownDevice.name;
+	        foreach (InputControlScheme.DeviceRequirement requirement in currentScheme.deviceRequirements
+		                 .Where(d =>!d.controlPath.Contains(lastKnownDevice.name)))
+	        {
+		        string originalDeviceName = requirement.controlPath;
+		        string cleanDeviceName = originalDeviceName.Replace("<", "").Replace(">", "");
+		        supportedDeviceNames[iteration++] = cleanDeviceName;
+	        }
+	        
+	        // Go through all the controls until it lands on the one for the current control scheme
 	        InputControl[] controls = targetAction.controls.ToArray();
 	        foreach (InputControl control in controls)
 	        {
-		        Debug.Log($"Balls: {control.device.name} / {lastKnownDevice.name}");
-		        if (control.device.name != lastKnownDevice.name) continue;
-		        List<GlyphEntry> foundList = config.GetGlyphList(lastKnownDevice.name);
-		        if (foundList == null)
-			        foreach (var layout in config.ControllerLayouts)
+		        if (!supportedDeviceNames.Contains(control.device.name)) continue;
+		        foreach (var device in supportedDeviceNames)
+		        {
+			        // Find the glyph list for each device in this control scheme. This first bit weeds out any unsupported devices in the control scheme.
+			        List<GlyphEntry> foundList = config.GetGlyphList(device);
+			        if (foundList == null)
 			        {
-				        if (!InputSystem.IsFirstLayoutBasedOnSecond(lastKnownDevice.layout, layout)) continue;
-				        foundList = config.GetGlyphList(layout);
-				        break;
+				        foreach (var layout in config.ControllerLayouts)
+				        {
+					        if (!InputSystem.IsFirstLayoutBasedOnSecond(lastKnownDevice.layout, layout)) continue;
+					        foundList = config.GetGlyphList(layout);
+					        break;
+				        }
+				        if (foundList == null) continue; // If it's still null, just end the search
 			        }
-		        if (foundList == null) break; // If it's still null, just end the search
 			        
-		        // Note: only the first control per device will be returned. This acts as the "primary" control.
-		        Sprite foundSprite = foundList.Find(g => g.GlyphPath == control.path).GlyphSprite;
-		        if (logOptions.ShowInfoLogs) 
-			        Debug.Log($"[INFO] Returned glyph {foundSprite.name} for input action \"{actionName}\".");
-		        return foundSprite;
+			        // This next bit tries to get the glyph for the current device and skips over if it's not found
+			        // (for example, mouse was passed through but it's keyboard that has the control)
+			        GlyphEntry foundEntry = foundList.Find(g => g.GlyphPath == control.path);
+			        if (foundEntry == null) continue; // Likely not the right device in the control scheme
+			        if (logOptions.ShowInfoLogs) 
+				        Debug.Log($"[INFO] Returned glyph {foundEntry.GlyphSprite.name} for input action \"{actionName}\".");
+			        return foundEntry.GlyphSprite;
+		        }
 	        }
-
-	        Debug.LogError($"[ERROR] Glyph could not be found at input action \"{actionName}\" within the connected control schemes.");
+	        
+	        // "Oh well... guess that's that, then." (Just end the search here lol)
+	        string controlSchemeList = InputSystem.devices.Aggregate("", (current, device) => current + $"\n• {device.layout}");
+	        Debug.LogError($"[ERROR] Glyph could not be found at input action \"{actionName}\" within the following connected control schemes:" +
+	                       $"\n{controlSchemeList}");
 	        return config.ErrorGlyphSprite;
         }
 
@@ -129,13 +150,13 @@ namespace BZApp.GUI.Components
 	        if (change != InputActionChange.ActionPerformed) return;
 	        InputAction action = (InputAction)obj;
 	        int bindingIndex = action.GetBindingIndexForControl(action.activeControl);
-	        if (bindingIndex == -1) return;
+	        if (bindingIndex == -1 || action.bindings[bindingIndex].groups == lastKnownScheme) return;
 	        lastKnownScheme = action.bindings[bindingIndex].groups;
-	        Debug.Log(lastKnownScheme);
 	        
 	        InputDevice newDevice = action.activeControl.device;
 	        if (newDevice.name == lastKnownDevice.name) return;
 	        lastKnownDevice = newDevice;
+	        if (logOptions.ShowInfoLogs) Debug.Log($"[INFO] Detected new input device \"{newDevice.name}\".");
 	        UpdateTrackedGlyphs();
         }
 

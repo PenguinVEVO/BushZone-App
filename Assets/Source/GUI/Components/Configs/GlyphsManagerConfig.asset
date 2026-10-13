@@ -15,385 +15,385 @@ MonoBehaviour:
   KeyboardGlyphSprites:
   - GlyphPath: /Keyboard/anyKey
     GlyphName: anyKey
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/escape
     GlyphName: escape
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 7224a2d947493c59c93d7ad2371d2296, type: 3}
   - GlyphPath: /Keyboard/space
     GlyphName: space
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: fef284a56f1855197a085834cf8a5543, type: 3}
   - GlyphPath: /Keyboard/enter
     GlyphName: enter
-    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+    GlyphSprite: {fileID: 21300000, guid: ea68da89413615f3ebda5c210de46d57, type: 3}
   - GlyphPath: /Keyboard/tab
     GlyphName: tab
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: fc660950b0fee62e2b9bbb33e33de812, type: 3}
   - GlyphPath: /Keyboard/backquote
     GlyphName: backquote
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/quote
     GlyphName: quote
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: e091b0ce5744dbe05b9a8a41f71c62da, type: 3}
   - GlyphPath: /Keyboard/semicolon
     GlyphName: semicolon
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: c09167074917e1f35a7a0f24fa1106eb, type: 3}
   - GlyphPath: /Keyboard/comma
     GlyphName: comma
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/period
     GlyphName: period
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/slash
     GlyphName: slash
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 404fcadb32b6f80baa14d08bc27ee908, type: 3}
   - GlyphPath: /Keyboard/backslash
     GlyphName: backslash
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/leftBracket
     GlyphName: leftBracket
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: f858cf13b9394f984a46ee589b3e41b3, type: 3}
   - GlyphPath: /Keyboard/rightBracket
     GlyphName: rightBracket
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 9a9c11eebb7f453c1b069653e044cf9a, type: 3}
   - GlyphPath: /Keyboard/minus
     GlyphName: minus
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 5191a8a4f0112502281b6e8b79de7dcd, type: 3}
   - GlyphPath: /Keyboard/equals
     GlyphName: equals
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/upArrow
     GlyphName: upArrow
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: f9d8726246697c0d99d6bbf1fb0ddc77, type: 3}
   - GlyphPath: /Keyboard/downArrow
     GlyphName: downArrow
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: d0711757fa39be30ca34dad7a6cb53e1, type: 3}
   - GlyphPath: /Keyboard/leftArrow
     GlyphName: leftArrow
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: ed90103eaf8882cb0ba098ba7c52ce81, type: 3}
   - GlyphPath: /Keyboard/rightArrow
     GlyphName: rightArrow
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: df09843f639bfdb07bae4e8e1382f519, type: 3}
   - GlyphPath: /Keyboard/a
     GlyphName: a
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 37e17ede78acba00ea98fcf5253bf340, type: 3}
   - GlyphPath: /Keyboard/b
     GlyphName: b
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 0053756d0421d867782bb09954fdf04e, type: 3}
   - GlyphPath: /Keyboard/c
     GlyphName: c
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 91c80c9c5b35d4da586cb53d4943cc89, type: 3}
   - GlyphPath: /Keyboard/d
     GlyphName: d
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a91c465c33be03fab99a0e20d098062, type: 3}
   - GlyphPath: /Keyboard/e
     GlyphName: e
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: f8c4b066f02f3d6889691c0cc1f93208, type: 3}
   - GlyphPath: /Keyboard/f
     GlyphName: f
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 4908a04f496b22caab20b9ea983d15c1, type: 3}
   - GlyphPath: /Keyboard/g
     GlyphName: g
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 7befffcbaa960d508b538237f0d6771e, type: 3}
   - GlyphPath: /Keyboard/h
     GlyphName: h
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 0dd3e32a40d85242d8ff49615c7f1dc4, type: 3}
   - GlyphPath: /Keyboard/i
     GlyphName: i
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 759e62eea189e124193de60bb20b234e, type: 3}
   - GlyphPath: /Keyboard/j
     GlyphName: j
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 76e221d34cc8c0ec3b1c08e5f3d5e3da, type: 3}
   - GlyphPath: /Keyboard/k
     GlyphName: k
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 9ef33f10fb9f33ba3b836e3f5d45e6ca, type: 3}
   - GlyphPath: /Keyboard/l
     GlyphName: l
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 6ca3af437e3c03002b445d2c10863cc1, type: 3}
   - GlyphPath: /Keyboard/m
     GlyphName: m
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 55d4a09f86683af7abbad371cba49b01, type: 3}
   - GlyphPath: /Keyboard/n
     GlyphName: n
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3e53c8f3ab3b15f05961972338caee89, type: 3}
   - GlyphPath: /Keyboard/o
     GlyphName: o
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 1d079c80d404a84a4924269736a06707, type: 3}
   - GlyphPath: /Keyboard/p
     GlyphName: p
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 443ba733e451405c89b9b1eaa69befe6, type: 3}
   - GlyphPath: /Keyboard/q
     GlyphName: q
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 49a9c26c8eedabd2e9a56535d716f902, type: 3}
   - GlyphPath: /Keyboard/r
     GlyphName: r
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: cbe71591f0f0b2dfe94ff9cabc5f9273, type: 3}
   - GlyphPath: /Keyboard/s
     GlyphName: s
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: c09cf15a7d9f9e00092c58356c2ea7b2, type: 3}
   - GlyphPath: /Keyboard/t
     GlyphName: t
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: ecec97f26e0ae121abe95fd703bce74e, type: 3}
   - GlyphPath: /Keyboard/u
     GlyphName: u
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: d76f5ff567660530a962f8351972a355, type: 3}
   - GlyphPath: /Keyboard/v
     GlyphName: v
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 5557c85a444df6525899aff04c1387b8, type: 3}
   - GlyphPath: /Keyboard/w
     GlyphName: w
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 32bd89d402bee06159a67edcc349b578, type: 3}
   - GlyphPath: /Keyboard/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 8fa516441d5ed441cb0ae19a27782534, type: 3}
   - GlyphPath: /Keyboard/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: a73aaad037ca2b67999f5fa22628b4df, type: 3}
   - GlyphPath: /Keyboard/z
     GlyphName: z
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/
+    GlyphSprite: {fileID: 21300000, guid: 2cf52a5a13ea0964b88aa23ce1a73d26, type: 3}
+  - GlyphPath: /Keyboard/1
     GlyphName: 1
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/
+    GlyphSprite: {fileID: 21300000, guid: ff8bd14c7977e0df2a2250ebbb415f7c, type: 3}
+  - GlyphPath: /Keyboard/2
     GlyphName: 2
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/
+    GlyphSprite: {fileID: 21300000, guid: af6960ee266fa3065b8ddb7f57a52889, type: 3}
+  - GlyphPath: /Keyboard/3
     GlyphName: 3
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/
+    GlyphSprite: {fileID: 21300000, guid: 9deb9e24009d7d5ffbdc4bcee237f666, type: 3}
+  - GlyphPath: /Keyboard/4
     GlyphName: 4
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/
+    GlyphSprite: {fileID: 21300000, guid: c461f796abddb2225b13cb86fc9c7557, type: 3}
+  - GlyphPath: /Keyboard/5
     GlyphName: 5
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/
+    GlyphSprite: {fileID: 21300000, guid: f5c7b04e96ba1b893921b011c48b9dad, type: 3}
+  - GlyphPath: /Keyboard/6
     GlyphName: 6
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/
+    GlyphSprite: {fileID: 21300000, guid: ccecf8567fbc07070a4d2a930c01eae2, type: 3}
+  - GlyphPath: /Keyboard/7
     GlyphName: 7
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/
+    GlyphSprite: {fileID: 21300000, guid: 7724c453a581593cc95dbbcebd0fdc2b, type: 3}
+  - GlyphPath: /Keyboard/8
     GlyphName: 8
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/
+    GlyphSprite: {fileID: 21300000, guid: f0345c5e520c9fe8393fcdcbb378a416, type: 3}
+  - GlyphPath: /Keyboard/9
     GlyphName: 9
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/
+    GlyphSprite: {fileID: 21300000, guid: 62d685ea02860eee4885df5bf126bb08, type: 3}
+  - GlyphPath: /Keyboard/0
     GlyphName: 0
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 4c48974a013d1520880f07837dfb07b2, type: 3}
   - GlyphPath: /Keyboard/leftShift
     GlyphName: leftShift
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/rightShift
     GlyphName: rightShift
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/shift
     GlyphName: shift
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 9df258344360f15fea6c9b6cdd2fd37d, type: 3}
   - GlyphPath: /Keyboard/leftAlt
     GlyphName: leftAlt
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/rightAlt
     GlyphName: rightAlt
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/alt
     GlyphName: alt
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 0212ef1da663f5f86985afca8bbc6a55, type: 3}
   - GlyphPath: /Keyboard/leftCtrl
     GlyphName: leftCtrl
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/rightCtrl
     GlyphName: rightCtrl
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/ctrl
     GlyphName: ctrl
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: e6fbb58411fcf9b5a8db7306d6e6973c, type: 3}
   - GlyphPath: /Keyboard/leftMeta
     GlyphName: leftMeta
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 736019c0e6bb7ad6d81c4eb997c5540c, type: 3}
   - GlyphPath: /Keyboard/rightMeta
     GlyphName: rightMeta
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/contextMenu
     GlyphName: contextMenu
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 6fc63ad3ade7128128af144339aa9be6, type: 3}
   - GlyphPath: /Keyboard/backspace
     GlyphName: backspace
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 1a05b08b5e2ee5dd08fd174b21c979f3, type: 3}
   - GlyphPath: /Keyboard/pageDown
     GlyphName: pageDown
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 267c8f8865d13bd63ae840f10015aa48, type: 3}
   - GlyphPath: /Keyboard/pageUp
     GlyphName: pageUp
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 025572acf98bb8f3b9e57c4025d2332d, type: 3}
   - GlyphPath: /Keyboard/home
     GlyphName: home
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 233925f1170771719898ac6aacd26656, type: 3}
   - GlyphPath: /Keyboard/end
     GlyphName: end
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a4d07cb8aa0a25a38f319962d696d5f, type: 3}
   - GlyphPath: /Keyboard/insert
     GlyphName: insert
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: ba1978d39400feb8eb8bbdd468ae91c3, type: 3}
   - GlyphPath: /Keyboard/delete
     GlyphName: delete
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3b41fb01bc2dea69da8451cef6bc9fe8, type: 3}
   - GlyphPath: /Keyboard/capsLock
     GlyphName: capsLock
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 0d3c1a55a22e6b2979376df9dac97466, type: 3}
   - GlyphPath: /Keyboard/numLock
     GlyphName: numLock
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 051b396cb560dd44bab7ceeb1c25b835, type: 3}
   - GlyphPath: /Keyboard/printScreen
     GlyphName: printScreen
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 8922bf87891e17462938c8a120b92676, type: 3}
   - GlyphPath: /Keyboard/scrollLock
     GlyphName: scrollLock
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/pause
     GlyphName: pause
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/numpadEnter
     GlyphName: numpadEnter
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/numpadDivide
     GlyphName: numpadDivide
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/numpadMultiply
     GlyphName: numpadMultiply
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/numpadPlus
     GlyphName: numpadPlus
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/numpadMinus
     GlyphName: numpadMinus
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/numpadPeriod
     GlyphName: numpadPeriod
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/numpadEquals
     GlyphName: numpadEquals
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/numpad
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/numpad1
     GlyphName: numpad1
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/numpad
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/numpad2
     GlyphName: numpad2
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/numpad
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/numpad3
     GlyphName: numpad3
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/numpad
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/numpad4
     GlyphName: numpad4
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/numpad
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/numpad5
     GlyphName: numpad5
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/numpad
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/numpad6
     GlyphName: numpad6
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/numpad
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/numpad7
     GlyphName: numpad7
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/numpad
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/numpad8
     GlyphName: numpad8
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/numpad
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/numpad9
     GlyphName: numpad9
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/numpad
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/numpad0
     GlyphName: numpad0
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f1
     GlyphName: f1
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: afd9663d0da253b1d939ab7a203667c2, type: 3}
+  - GlyphPath: /Keyboard/f2
     GlyphName: f2
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: b32a81bc22279c97db4289a0f5839659, type: 3}
+  - GlyphPath: /Keyboard/f3
     GlyphName: f3
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3b95e6b9e907409af8214726ed5730eb, type: 3}
+  - GlyphPath: /Keyboard/f4
     GlyphName: f4
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: c6009475b9a034dd69f956f11e4bd6ab, type: 3}
+  - GlyphPath: /Keyboard/f5
     GlyphName: f5
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 0a98835ae485ae06aa4e6435f189b548, type: 3}
+  - GlyphPath: /Keyboard/f6
     GlyphName: f6
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: db47f45e2786557d681a653b31c459be, type: 3}
+  - GlyphPath: /Keyboard/f7
     GlyphName: f7
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 04721e57677cb89009903df0de9276e4, type: 3}
+  - GlyphPath: /Keyboard/f8
     GlyphName: f8
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 64cd0c23f1d172562a50d22fb0272758, type: 3}
+  - GlyphPath: /Keyboard/f9
     GlyphName: f9
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: f0ca461b9d096fce0ba9e667c5c5a906, type: 3}
+  - GlyphPath: /Keyboard/f10
     GlyphName: f10
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: a0d96d6a09ddf3f2894d31c30e335c34, type: 3}
+  - GlyphPath: /Keyboard/f11
     GlyphName: f11
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: f58c9e15fac4be08eb9f8f2227498c84, type: 3}
+  - GlyphPath: /Keyboard/f12
     GlyphName: f12
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/OEM
+    GlyphSprite: {fileID: 21300000, guid: 4060c775076b82d82a99af86b4bfd946, type: 3}
+  - GlyphPath: /Keyboard/OEM1
     GlyphName: OEM1
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/OEM
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/OEM2
     GlyphName: OEM2
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/OEM
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/OEM3
     GlyphName: OEM3
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/OEM
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/OEM4
     GlyphName: OEM4
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/OEM
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/OEM5
     GlyphName: OEM5
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f13
     GlyphName: f13
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f14
     GlyphName: f14
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f15
     GlyphName: f15
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f16
     GlyphName: f16
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f17
     GlyphName: f17
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f18
     GlyphName: f18
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f19
     GlyphName: f19
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f20
     GlyphName: f20
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f21
     GlyphName: f21
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f22
     GlyphName: f22
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f23
     GlyphName: f23
-    GlyphSprite: {fileID: 0}
-  - GlyphPath: /Keyboard/f
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
+  - GlyphPath: /Keyboard/f24
     GlyphName: f24
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Keyboard/IMESelected
     GlyphName: IMESelected
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   MouseGlyphSprites:
   - GlyphPath: /Mouse/position
     GlyphName: position
@@ -491,7 +491,7 @@ MonoBehaviour:
     GlyphSprite: {fileID: 0}
   - GlyphPath: /Gamepad/buttonSouth
     GlyphName: buttonSouth
-    GlyphSprite: {fileID: 21300000, guid: 5df541ec8cea8ed4b9e28702b971af42, type: 3}
+    GlyphSprite: {fileID: 21300000, guid: e6c0542a1b7bc6031bf04e38278a426e, type: 3}
   - GlyphPath: /Gamepad/buttonWest
     GlyphName: buttonWest
     GlyphSprite: {fileID: 0}
@@ -894,4 +894,4 @@ MonoBehaviour:
   - GlyphPath: /SwitchProControllerHID/dpad/right
     GlyphName: right
     GlyphSprite: {fileID: 0}
-  ErrorGlyphSprite: {fileID: 0}
+  ErrorGlyphSprite: {fileID: 21300000, guid: e89881f646d220ca980d75d3f10d9118, type: 3}

@@ -13,6 +13,9 @@ namespace BZApp.GUI.Components
             ImageToTrack = imageToTrack;
             ActionMapName = actionMapName;
             ActionName = actionName;
+
+            if (!GuiSystem.Instance || !imageToTrack) return;
+            imageToTrack.sprite = GuiSystem.Instance.Get<GlyphsManager>().GetGlyph(actionMapName, actionName);
         }
     }
 }

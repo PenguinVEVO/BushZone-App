@@ -12,14 +12,20 @@
   <component name="ChangeListManager">
     <list default="true" id="df7d10df-fd64-45f7-933e-378909d71b6c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BushZone-App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BushZone-App/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/GUI/Components/Config/GlyphsManagerConfigEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/GUI/Components/Config/GlyphsManagerConfigEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevelopmentScenes/GUIComponentTesting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevelopmentScenes/GUIComponentTesting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Extras/TrackableGlyph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Components/Extras/TrackableGlyph.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/GlyphsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Components/GlyphsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/PopupBoxManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Components/PopupBoxManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Source/MainScheme.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/MainScheme.inputactions" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
   </component>
   <component name="EmbeddingIndexingInfo">
     <option name="cachedIndexableFilesCount" value="4" />
@@ -31,6 +37,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Editor/GUI/Components/Config/GlyphsManagerConfigEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -40,60 +47,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000000004399" />
-      <entry key="S2" value="1.0008143857849854" />
-      <entry key="S5" value="1.058120869970516" />
-      <entry key="S10" value="1.2411486705245245" />
-      <entry key="S30" value="1.6627870915685043" />
-      <entry key="S60" value="1.990203637685009" />
-      <entry key="M2" value="2.4332008575999824" />
-      <entry key="M5" value="6.7451381253822795" />
-      <entry key="M10" value="24.492698289319385" />
-      <entry key="M15" value="50.37610344921714" />
-      <entry key="M30" value="138.23409110244205" />
-      <entry key="H1" value="287.547077186977" />
-      <entry key="H2" value="475.2220503391569" />
-      <entry key="H4" value="716.3027333959362" />
-      <entry key="D1" value="2459.9019842941602" />
-      <entry key="W1" value="3763.730939199996" />
+      <entry key="MS500" value="1.000000000002636" />
+      <entry key="S2" value="1.0020592673791413" />
+      <entry key="S5" value="1.1321446268183704" />
+      <entry key="S10" value="1.7122770447453146" />
+      <entry key="S30" value="5.297480876005198" />
+      <entry key="S60" value="9.4915872375114" />
+      <entry key="M2" value="15.47613314322126" />
+      <entry key="M5" value="24.437708738751525" />
+      <entry key="M10" value="31.20002514234328" />
+      <entry key="M15" value="35.85501913205377" />
+      <entry key="M30" value="54.89047455114648" />
+      <entry key="H1" value="111.18059305195023" />
+      <entry key="H2" value="246.28744678517424" />
+      <entry key="H4" value="517.5284950328714" />
+      <entry key="D1" value="2428.10340092713" />
+      <entry key="W1" value="4036.2618215823986" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="9.66015737581407E-6" />
-      <entry key="MS500" value="0.1362515889581091" />
-      <entry key="S2" value="1.075910185203063" />
-      <entry key="S5" value="1.9820571758787613" />
-      <entry key="S10" value="2.6777311467463734" />
-      <entry key="S30" value="3.4516414197678973" />
-      <entry key="S60" value="3.7089119170868705" />
-      <entry key="M2" value="3.8790128963690598" />
-      <entry key="M5" value="5.114464741128777" />
-      <entry key="M10" value="9.662044314102106" />
-      <entry key="M15" value="15.417167516572059" />
-      <entry key="M30" value="32.237469027206146" />
-      <entry key="H1" value="57.249705873476834" />
-      <entry key="H2" value="86.90999932800646" />
-      <entry key="H4" value="120.41233998978429" />
-      <entry key="D1" value="227.59707116717482" />
-      <entry key="W1" value="279.15218174229494" />
+      <entry key="MS100" value="9.548844524078504E-65" />
+      <entry key="MS500" value="1.5703272403514503E-13" />
+      <entry key="S2" value="6.295132504885154E-4" />
+      <entry key="S5" value="0.05362838629928434" />
+      <entry key="S10" value="0.30006946676917906" />
+      <entry key="S30" value="1.8149295486032568" />
+      <entry key="S60" value="3.4115493533973353" />
+      <entry key="M2" value="5.119431003693544" />
+      <entry key="M5" value="7.101267269145882" />
+      <entry key="M10" value="8.574239638625802" />
+      <entry key="M15" value="9.669887196029473" />
+      <entry key="M30" value="14.23213493911507" />
+      <entry key="H1" value="27.82163206025203" />
+      <entry key="H2" value="57.79901612753372" />
+      <entry key="H4" value="108.90019272845913" />
+      <entry key="D1" value="281.0083450046109" />
+      <entry key="W1" value="365.77526879536526" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.299907337868999E-4" />
-      <entry key="MS500" value="0.2891525995753083" />
-      <entry key="S2" value="1.4956663592913346" />
-      <entry key="S5" value="2.4712908504123834" />
-      <entry key="S10" value="3.3957393014038955" />
-      <entry key="S30" value="4.820361084970457" />
-      <entry key="S60" value="5.52843446196589" />
-      <entry key="M2" value="6.218553398425454" />
-      <entry key="M5" value="11.80260085366049" />
-      <entry key="M10" value="34.09492823832659" />
-      <entry key="M15" value="65.72652178819082" />
-      <entry key="M30" value="170.39390730921048" />
-      <entry key="H1" value="344.72357666760337" />
-      <entry key="H2" value="562.0764837879872" />
-      <entry key="H4" value="836.6772554722806" />
-      <entry key="D1" value="2687.486849547501" />
-      <entry key="W1" value="4042.8809270306774" />
+      <entry key="MS100" value="3.042853253207185E-8" />
+      <entry key="MS500" value="0.03138023572707092" />
+      <entry key="S2" value="0.42270876100541993" />
+      <entry key="S5" value="0.8637659740578232" />
+      <entry key="S10" value="1.7675684913670868" />
+      <entry key="S30" value="6.881821938396088" />
+      <entry key="S60" value="12.7079629297609" />
+      <entry key="M2" value="20.447354406365715" />
+      <entry key="M5" value="31.450103693015176" />
+      <entry key="M10" value="39.71643704881682" />
+      <entry key="M15" value="45.4799185960711" />
+      <entry key="M30" value="69.09016942531441" />
+      <entry key="H1" value="138.97283278811642" />
+      <entry key="H2" value="304.05611152627904" />
+      <entry key="H4" value="626.399202886326" />
+      <entry key="D1" value="2709.0979563276533" />
+      <entry key="W1" value="4402.034430321877" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -107,6 +114,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Device#class com.jetbrains.rider.plugins.unity.run.devices.UnityEditorDeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider#Unity Attach To: Attach to&quot;: &quot;Unity Editor&quot;,
+    &quot;DeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider&quot;: &quot;Unity Editor&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -114,6 +123,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Unity Attach To.Attach to.executor&quot;: &quot;Debug&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
@@ -129,7 +139,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Unity Attach To.Attach to">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Unity/Hub/Editor/2022.3.62f3/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
