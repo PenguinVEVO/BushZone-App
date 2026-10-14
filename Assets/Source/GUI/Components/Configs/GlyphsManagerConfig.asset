@@ -397,397 +397,397 @@ MonoBehaviour:
   MouseGlyphSprites:
   - GlyphPath: /Mouse/position
     GlyphName: position
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/delta
     GlyphName: delta
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/scroll
     GlyphName: scroll
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/press
     GlyphName: press
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 950eb4944604e487dbc3919ef490f885, type: 3}
   - GlyphPath: /Mouse/leftButton
     GlyphName: leftButton
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 9a50f86ce1ea5e671af660bf3ce9ed89, type: 3}
   - GlyphPath: /Mouse/rightButton
     GlyphName: rightButton
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 07a4b1ceadbb264f5bc736c800f18adb, type: 3}
   - GlyphPath: /Mouse/middleButton
     GlyphName: middleButton
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: c3262c624adac0d7388b9b5b1f00df9d, type: 3}
   - GlyphPath: /Mouse/forwardButton
     GlyphName: forwardButton
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/backButton
     GlyphName: backButton
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/pressure
     GlyphName: pressure
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/radius
     GlyphName: radius
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/pointerId
     GlyphName: pointerId
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/displayIndex
     GlyphName: displayIndex
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/clickCount
     GlyphName: clickCount
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/position/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/position/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/delta/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/delta/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/delta/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/delta/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/delta/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/delta/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/scroll/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/scroll/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/scroll/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/scroll/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/scroll/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/scroll/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/radius/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /Mouse/radius/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   GamepadGlyphSprites:
   - GlyphPath: /Gamepad/dpad
     GlyphName: dpad
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 8f064427edadc7b29a835c109a7395ac, type: 3}
   - GlyphPath: /Gamepad/buttonSouth
     GlyphName: buttonSouth
     GlyphSprite: {fileID: 21300000, guid: e6c0542a1b7bc6031bf04e38278a426e, type: 3}
   - GlyphPath: /Gamepad/buttonWest
     GlyphName: buttonWest
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 714398961453bb4b9922b2d4846aeef7, type: 3}
   - GlyphPath: /Gamepad/buttonNorth
     GlyphName: buttonNorth
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: e2c07ef5eab2b923e8ef6b62630c06c2, type: 3}
   - GlyphPath: /Gamepad/buttonEast
     GlyphName: buttonEast
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 4aee88c6bbd0c093ca4163a90a852995, type: 3}
   - GlyphPath: /Gamepad/leftStickPress
     GlyphName: leftStickPress
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 93228b454418ec2178896ee5e233006f, type: 3}
   - GlyphPath: /Gamepad/rightStickPress
     GlyphName: rightStickPress
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: ac4042eff77dfea0da763543ff088cb4, type: 3}
   - GlyphPath: /Gamepad/leftShoulder
     GlyphName: leftShoulder
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 13ccf7e4a71aa47acbd4782381d762cd, type: 3}
   - GlyphPath: /Gamepad/rightShoulder
     GlyphName: rightShoulder
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 65151e8d136eb9b248e35c22d37b4cdc, type: 3}
   - GlyphPath: /Gamepad/start
     GlyphName: start
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 01a85781e55d32dec8ae70632c3707c6, type: 3}
   - GlyphPath: /Gamepad/select
     GlyphName: select
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: fca3daa3483c3f347a05eeb8eca01aa3, type: 3}
   - GlyphPath: /Gamepad/leftStick
     GlyphName: leftStick
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 9ec388c63710b3e95a75bd69b963af97, type: 3}
   - GlyphPath: /Gamepad/rightStick
     GlyphName: rightStick
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 2342d7f1283e32becb3db10ed5dee880, type: 3}
   - GlyphPath: /Gamepad/leftTrigger
     GlyphName: leftTrigger
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: d3e6c336fb70e950ba586df6cb258b89, type: 3}
   - GlyphPath: /Gamepad/rightTrigger
     GlyphName: rightTrigger
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 81fd4159ae6b431eeafc1fe47b171314, type: 3}
   - GlyphPath: /Gamepad/dpad/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 35957fcb0d483894db8c98b1edf75efb, type: 3}
   - GlyphPath: /Gamepad/dpad/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: e21656fe6e8219f459f7197d42db4124, type: 3}
   - GlyphPath: /Gamepad/dpad/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3ff4962ec385d130f88de936dc111c6e, type: 3}
   - GlyphPath: /Gamepad/dpad/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: abdcb4b972e5c265bb2220e7de6b5ed7, type: 3}
   - GlyphPath: /Gamepad/dpad/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 6f28608b7be2fec8ba0d593ea604793b, type: 3}
   - GlyphPath: /Gamepad/dpad/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: cd57a0f3c1e756ac3bbfc378e6f61ae8, type: 3}
   - GlyphPath: /Gamepad/leftStick/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 072b5cfe6913ca24fa78ba5743fbfc78, type: 3}
   - GlyphPath: /Gamepad/leftStick/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: e931348b266f189429f4049c4e7e30c8, type: 3}
   - GlyphPath: /Gamepad/leftStick/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 82c6ab37735e1e24587f507069f1a2d3, type: 3}
   - GlyphPath: /Gamepad/leftStick/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 4a574d7518c0b374c9dc4b1c70f0d6a3, type: 3}
   - GlyphPath: /Gamepad/leftStick/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 2a33a17bc47d9c34b9b6d9633ace6462, type: 3}
   - GlyphPath: /Gamepad/leftStick/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 4751fc6e9c1479a45b4fb0c89f4af538, type: 3}
   - GlyphPath: /Gamepad/rightStick/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: f2f727c7c659bce438de2b50b7212766, type: 3}
   - GlyphPath: /Gamepad/rightStick/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 9c2b40c293a45724499c899a0e519fe2, type: 3}
   - GlyphPath: /Gamepad/rightStick/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 1811ea0c15240514ebac9d009766a199, type: 3}
   - GlyphPath: /Gamepad/rightStick/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: c1f6473f0ed972a4c8d7d405326e59be, type: 3}
   - GlyphPath: /Gamepad/rightStick/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: ae3db8f3dfdecfd409633d939245835f, type: 3}
   - GlyphPath: /Gamepad/rightStick/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 9d8ca523b4041a842812b2469748beb4, type: 3}
   XboxGlyphSprites:
   - GlyphPath: /XInputController/buttonSouth
     GlyphName: buttonSouth
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: e6c0542a1b7bc6031bf04e38278a426e, type: 3}
   - GlyphPath: /XInputController/buttonEast
     GlyphName: buttonEast
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 4aee88c6bbd0c093ca4163a90a852995, type: 3}
   - GlyphPath: /XInputController/buttonWest
     GlyphName: buttonWest
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 714398961453bb4b9922b2d4846aeef7, type: 3}
   - GlyphPath: /XInputController/buttonNorth
     GlyphName: buttonNorth
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: e2c07ef5eab2b923e8ef6b62630c06c2, type: 3}
   - GlyphPath: /XInputController/leftShoulder
     GlyphName: leftShoulder
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 13ccf7e4a71aa47acbd4782381d762cd, type: 3}
   - GlyphPath: /XInputController/rightShoulder
     GlyphName: rightShoulder
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 65151e8d136eb9b248e35c22d37b4cdc, type: 3}
   - GlyphPath: /XInputController/leftTrigger
     GlyphName: leftTrigger
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: d3e6c336fb70e950ba586df6cb258b89, type: 3}
   - GlyphPath: /XInputController/rightTrigger
     GlyphName: rightTrigger
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 81fd4159ae6b431eeafc1fe47b171314, type: 3}
   - GlyphPath: /XInputController/start
     GlyphName: start
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 01a85781e55d32dec8ae70632c3707c6, type: 3}
   - GlyphPath: /XInputController/select
     GlyphName: select
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: fca3daa3483c3f347a05eeb8eca01aa3, type: 3}
   - GlyphPath: /XInputController/dpad
     GlyphName: dpad
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 8f064427edadc7b29a835c109a7395ac, type: 3}
   - GlyphPath: /XInputController/leftStickPress
     GlyphName: leftStickPress
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 93228b454418ec2178896ee5e233006f, type: 3}
   - GlyphPath: /XInputController/rightStickPress
     GlyphName: rightStickPress
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: ac4042eff77dfea0da763543ff088cb4, type: 3}
   - GlyphPath: /XInputController/leftStick
     GlyphName: leftStick
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 9ec388c63710b3e95a75bd69b963af97, type: 3}
   - GlyphPath: /XInputController/rightStick
     GlyphName: rightStick
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 2342d7f1283e32becb3db10ed5dee880, type: 3}
   - GlyphPath: /XInputController/dpad/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 35957fcb0d483894db8c98b1edf75efb, type: 3}
   - GlyphPath: /XInputController/dpad/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: e21656fe6e8219f459f7197d42db4124, type: 3}
   - GlyphPath: /XInputController/dpad/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3ff4962ec385d130f88de936dc111c6e, type: 3}
   - GlyphPath: /XInputController/dpad/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: abdcb4b972e5c265bb2220e7de6b5ed7, type: 3}
   - GlyphPath: /XInputController/dpad/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 6f28608b7be2fec8ba0d593ea604793b, type: 3}
   - GlyphPath: /XInputController/dpad/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: cd57a0f3c1e756ac3bbfc378e6f61ae8, type: 3}
   - GlyphPath: /XInputController/leftStick/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 072b5cfe6913ca24fa78ba5743fbfc78, type: 3}
   - GlyphPath: /XInputController/leftStick/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: e931348b266f189429f4049c4e7e30c8, type: 3}
   - GlyphPath: /XInputController/leftStick/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 82c6ab37735e1e24587f507069f1a2d3, type: 3}
   - GlyphPath: /XInputController/leftStick/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 4a574d7518c0b374c9dc4b1c70f0d6a3, type: 3}
   - GlyphPath: /XInputController/leftStick/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 2a33a17bc47d9c34b9b6d9633ace6462, type: 3}
   - GlyphPath: /XInputController/leftStick/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 4751fc6e9c1479a45b4fb0c89f4af538, type: 3}
   - GlyphPath: /XInputController/rightStick/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 072b5cfe6913ca24fa78ba5743fbfc78, type: 3}
   - GlyphPath: /XInputController/rightStick/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 9c2b40c293a45724499c899a0e519fe2, type: 3}
   - GlyphPath: /XInputController/rightStick/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 1811ea0c15240514ebac9d009766a199, type: 3}
   - GlyphPath: /XInputController/rightStick/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: c1f6473f0ed972a4c8d7d405326e59be, type: 3}
   - GlyphPath: /XInputController/rightStick/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: ae3db8f3dfdecfd409633d939245835f, type: 3}
   - GlyphPath: /XInputController/rightStick/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 9d8ca523b4041a842812b2469748beb4, type: 3}
   PlaystationGlyphSprites:
   - GlyphPath: /DualShockGamepad/buttonWest
     GlyphName: buttonWest
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 8794896f9cfc2dc2e8782fdb37995447, type: 3}
   - GlyphPath: /DualShockGamepad/buttonNorth
     GlyphName: buttonNorth
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 08b191ddd18a28082889fddcbfa801c6, type: 3}
   - GlyphPath: /DualShockGamepad/buttonEast
     GlyphName: buttonEast
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: ab055224c75f375428a0bb36571d2cfb, type: 3}
   - GlyphPath: /DualShockGamepad/buttonSouth
     GlyphName: buttonSouth
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 7b6ea07df31380d0687ce56b181eebf1, type: 3}
   - GlyphPath: /DualShockGamepad/touchpadButton
     GlyphName: touchpadButton
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: a0dc2a0405ee4baffb8c353d76d558b8, type: 3}
   - GlyphPath: /DualShockGamepad/start
     GlyphName: start
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: d2dbc28d923c30f91a17850faaf5c49a, type: 3}
   - GlyphPath: /DualShockGamepad/select
     GlyphName: select
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: f7c1a8c9d20e25ab0b13a9780c71881a, type: 3}
   - GlyphPath: /DualShockGamepad/leftShoulder
     GlyphName: leftShoulder
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: c80b4f31883d3340e840cb87e36e6727, type: 3}
   - GlyphPath: /DualShockGamepad/rightShoulder
     GlyphName: rightShoulder
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 181b66bd38e78603f9b457df6848f5e2, type: 3}
   - GlyphPath: /DualShockGamepad/leftTrigger
     GlyphName: leftTrigger
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: c2840b4c1ac658e5b8d8386c3b4c1030, type: 3}
   - GlyphPath: /DualShockGamepad/rightTrigger
     GlyphName: rightTrigger
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 572db50cb9034b3b18eb8c4ea2d61663, type: 3}
   - GlyphPath: /DualShockGamepad/leftStickPress
     GlyphName: leftStickPress
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 60f24921142361e36a72031550634587, type: 3}
   - GlyphPath: /DualShockGamepad/rightStickPress
     GlyphName: rightStickPress
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 02253d032d180f2a4a3186d71ca02663, type: 3}
   - GlyphPath: /DualShockGamepad/dpad
     GlyphName: dpad
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 862e01c660cf56e3ebeae6424a6200b0, type: 3}
   - GlyphPath: /DualShockGamepad/leftStick
     GlyphName: leftStick
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 7dd16b544a193203ebba01ae39ec937e, type: 3}
   - GlyphPath: /DualShockGamepad/rightStick
     GlyphName: rightStick
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 9e9d7b82c84059a39a9880b9f9fad36a, type: 3}
   - GlyphPath: /DualShockGamepad/dpad/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/dpad/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/dpad/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 1bad1444bc9ee90e4a400dcfa4d7a295, type: 3}
   - GlyphPath: /DualShockGamepad/dpad/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: e0688e0e9d3dc71f69a8430a2fdab0aa, type: 3}
   - GlyphPath: /DualShockGamepad/dpad/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: b46977e074e62891b9130ed186b637ae, type: 3}
   - GlyphPath: /DualShockGamepad/dpad/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3ad740852b0def25f9b5a8e4d8153df3, type: 3}
   - GlyphPath: /DualShockGamepad/leftStick/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/leftStick/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/leftStick/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/leftStick/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/leftStick/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/leftStick/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/rightStick/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/rightStick/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/rightStick/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/rightStick/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/rightStick/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /DualShockGamepad/rightStick/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   SwitchProGlyphSprites:
   - GlyphPath: /SwitchProControllerHID/leftStick
     GlyphName: leftStick
