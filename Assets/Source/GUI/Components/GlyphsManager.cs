@@ -15,7 +15,6 @@ using System.Linq;
 using BZApp.Utilities;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 namespace BZApp.GUI.Components
 {
@@ -29,8 +28,7 @@ namespace BZApp.GUI.Components
 		
 		// ======================[#]  INTERNAL VARIABLES/REFERENCES  [#]======================
 
-		private List<TrackableGlyph> trackedGlyphs = new();
-
+		private List<TrackableGlyph> trackedGlyphs;
 		private InputDevice lastKnownDevice;
 		private string lastKnownScheme;
 
@@ -51,6 +49,12 @@ namespace BZApp.GUI.Components
 		
         // ======================[#]  GLYPHS MANAGER API  [#]======================
 
+        /// <summary>
+        /// Get the glyph sprite of a specific input action.
+        /// </summary>
+        /// <param name="actionMapName">The name of the input action map to search in.</param>
+        /// <param name="actionName">The name of the input action to try and search for the associated glyph with.</param>
+        /// <returns>The associated glyph if found, otherwise an error glyph.</returns>
         public Sprite GetGlyph(string actionMapName, string actionName)
         {
 	        // Turn the parameters into tangible stuff that the function can work with
@@ -117,9 +121,15 @@ namespace BZApp.GUI.Components
 	        return config.ErrorGlyphSprite;
         }
 
+        /// <summary>
+        /// Add an image to the tracking list to be automatically updated when the system detects a control scheme change.
+        /// </summary>
+        /// <param name="glyphToTrack">The image and input action information to add to the tracking list.</param>
         public void StartTrackingGlyph(TrackableGlyph glyphToTrack)
         {
-	        if (trackedGlyphs.Contains(glyphToTrack))
+	        if (trackedGlyphs == null)
+		        trackedGlyphs = new List<TrackableGlyph>();
+	        else if (trackedGlyphs.Contains(glyphToTrack))
 	        {
 		        if (logOptions.ShowWarningLogs)
 			        Debug.LogWarning($"[WARNING] Glyph {glyphToTrack.ImageToTrack.name} is already being tracked.");
@@ -130,6 +140,10 @@ namespace BZApp.GUI.Components
 	        Debug.Log($"[INFO] Started tracking glyph {glyphToTrack.ImageToTrack.name} with action {glyphToTrack.ActionName}.");
         }
 
+        /// <summary>
+        /// Remove an image from the tracking list (the image must already be tracked).
+        /// </summary>
+        /// <param name="glyphToRemove">The image and input action information to remove from the tracking list.</param>
         public void StopTrackingGlyph(TrackableGlyph glyphToRemove)
         {
 	        if (!trackedGlyphs.Contains(glyphToRemove))
@@ -141,6 +155,14 @@ namespace BZApp.GUI.Components
 	        trackedGlyphs.Remove(glyphToRemove);
 	        if (!logOptions.ShowInfoLogs) return;
 	        Debug.Log($"[INFO] Stopped tracking glyph {glyphToRemove.ImageToTrack.name}.");
+        }
+
+        public void StopTrackingAllGlyphs()
+        {
+	        int originalListCount = trackedGlyphs.Count;
+	        trackedGlyphs = null;
+	        if (!logOptions.ShowInfoLogs) return;
+	        Debug.Log($"[INFO] Stopped tracking all {originalListCount} glyphs.");
         }
         
         // ======================[#]  INTERNAL FUNCTIONS: INPUT SYSTEM HANDLING  [#]======================
