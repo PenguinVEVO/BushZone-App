@@ -791,107 +791,107 @@ MonoBehaviour:
   SwitchProGlyphSprites:
   - GlyphPath: /SwitchProControllerHID/leftStick
     GlyphName: leftStick
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: e94070ac3050ae34f836bf59653e7b15, type: 3}
   - GlyphPath: /SwitchProControllerHID/rightStick
     GlyphName: rightStick
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: c4ece8a2ff5552241bf14745f29046d9, type: 3}
   - GlyphPath: /SwitchProControllerHID/dpad
     GlyphName: dpad
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: b3844f77b734a76ea9088366082c0f3f, type: 3}
   - GlyphPath: /SwitchProControllerHID/buttonWest
     GlyphName: buttonWest
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 8225d90ec0d1b4b3bb350f7cdccf93dc, type: 3}
   - GlyphPath: /SwitchProControllerHID/buttonNorth
     GlyphName: buttonNorth
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 05bff37c6cd3ff4a9abc3d1ea8c9e03e, type: 3}
   - GlyphPath: /SwitchProControllerHID/buttonSouth
     GlyphName: buttonSouth
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 12dd1a328e3f7ad4cb7c7d2a152d9d12, type: 3}
   - GlyphPath: /SwitchProControllerHID/buttonEast
     GlyphName: buttonEast
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 5e2f8d50ffabfb39282bd028b345c21e, type: 3}
   - GlyphPath: /SwitchProControllerHID/leftShoulder
     GlyphName: leftShoulder
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: b49fabe74c7f73d2d840547036ee309b, type: 3}
   - GlyphPath: /SwitchProControllerHID/rightShoulder
     GlyphName: rightShoulder
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: ce8aef91b77cf55b7a2d6a64572b49ab, type: 3}
   - GlyphPath: /SwitchProControllerHID/leftStickPress
     GlyphName: leftStickPress
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: a0e3663a875f7b0babd1c1efc7cff501, type: 3}
   - GlyphPath: /SwitchProControllerHID/rightStickPress
     GlyphName: rightStickPress
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 16844c1cb077629a98c7b5d5cfb2bc0e, type: 3}
   - GlyphPath: /SwitchProControllerHID/leftTrigger
     GlyphName: leftTrigger
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3160b52851f384d8b8217a39fd0a4fc7, type: 3}
   - GlyphPath: /SwitchProControllerHID/rightTrigger
     GlyphName: rightTrigger
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 4c0ffa305914ba99d9dd69f18518bb6a, type: 3}
   - GlyphPath: /SwitchProControllerHID/start
     GlyphName: start
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 417871499c92345beb9f3cce0e6a9f13, type: 3}
   - GlyphPath: /SwitchProControllerHID/select
     GlyphName: select
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: cca55c6269979bae08f132143edb8089, type: 3}
   - GlyphPath: /SwitchProControllerHID/capture
     GlyphName: capture
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: b9c6eeadab93a8913a57950b133929ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/home
     GlyphName: home
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 13b8e01f787e2e44186aa6f7412b86bf, type: 3}
   - GlyphPath: /SwitchProControllerHID/leftStick/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/leftStick/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/leftStick/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/leftStick/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/leftStick/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/leftStick/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/rightStick/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/rightStick/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/rightStick/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/rightStick/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/rightStick/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/rightStick/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/dpad/x
     GlyphName: x
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/dpad/y
     GlyphName: y
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 3a3fa4b97b5fab54cb7b60656a7613ac, type: 3}
   - GlyphPath: /SwitchProControllerHID/dpad/up
     GlyphName: up
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 930c82e4cbbc40390aaf66c0525bf29f, type: 3}
   - GlyphPath: /SwitchProControllerHID/dpad/down
     GlyphName: down
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 559f096276705c215b96b50bcb95ac5c, type: 3}
   - GlyphPath: /SwitchProControllerHID/dpad/left
     GlyphName: left
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 10a41346fd785fe55b95a853181ea12a, type: 3}
   - GlyphPath: /SwitchProControllerHID/dpad/right
     GlyphName: right
-    GlyphSprite: {fileID: 0}
+    GlyphSprite: {fileID: 21300000, guid: 186d59c43bb6caeb2aec889dbfa2beca, type: 3}
   ErrorGlyphSprite: {fileID: 21300000, guid: e89881f646d220ca980d75d3f10d9118, type: 3}

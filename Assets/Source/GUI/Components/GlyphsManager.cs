@@ -146,6 +146,7 @@ namespace BZApp.GUI.Components
         /// <param name="glyphToRemove">The image and input action information to remove from the tracking list.</param>
         public void StopTrackingGlyph(TrackableGlyph glyphToRemove)
         {
+	        if (trackedGlyphs == null) return;
 	        if (!trackedGlyphs.Contains(glyphToRemove))
 	        {
 		        if (logOptions.ShowWarningLogs)
@@ -184,6 +185,7 @@ namespace BZApp.GUI.Components
 
         private void UpdateTrackedGlyphs()
         {
+	        if (trackedGlyphs == null) return;
 	        int iteration = 0;
 	        foreach (var glyph in trackedGlyphs)
 	        {
