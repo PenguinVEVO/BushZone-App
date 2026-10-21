@@ -12,7 +12,7 @@
 //    (IDE agent used, no link available)
 //  ============================================================================================
 
-using BZApp.GUI.Components;
+using BZApp.GUI.Modules;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -29,7 +29,7 @@ namespace BZApp.GUI
         // =========================[#]  INTERNAL REFERENCES  [#]=========================
 
         // GuiComponents dictionary
-        private readonly Dictionary<Type, GuiComponent> guiComponents = new();
+        private readonly Dictionary<Type, GuiSystemModule> guiModules = new();
 
         // Accessor properties
         public static GuiSystem Instance { get; private set; }
@@ -48,11 +48,11 @@ namespace BZApp.GUI
         /// <summary>
         /// Register a GUI Component to the GUI System registry.
         /// </summary>
-        /// <param name="guiComponent">The GUI Component to register.</param>
-        public void Register(GuiComponent guiComponent)
+        /// <param name="guiSystemModule">The GUI Component to register.</param>
+        public void Register(GuiSystemModule guiSystemModule)
         {
-            var componentType = guiComponent.GetType();
-            if (guiComponents.TryAdd(componentType, guiComponent)) return;
+            var componentType = guiSystemModule.GetType();
+            if (guiModules.TryAdd(componentType, guiSystemModule)) return;
             Debug.LogWarning($"[WARNING] A reference for type \"{componentType}\" is already registered.");
         }
         
@@ -60,9 +60,9 @@ namespace BZApp.GUI
         /// Get a registered GUI Component from the GUI System registry.
         /// </summary>
         /// <typeparam name="T">The type of the GUI Component you're trying to access.</typeparam>
-        public T Get<T>() where T : GuiComponent
+        public T Get<T>() where T : GuiSystemModule
         {
-            return guiComponents.TryGetValue(typeof(T), out var guiComponent)
+            return guiModules.TryGetValue(typeof(T), out var guiComponent)
                 ? (T)guiComponent : null;
         }
 
@@ -71,9 +71,9 @@ namespace BZApp.GUI
         /// </summary>
         /// <typeparam name="T">The type of the GUI Component you're trying to access.</typeparam>
         /// <returns>True if component was found, otherwise false.</returns>
-        public bool TryGet<T>(out T guiComponent) where T : GuiComponent
+        public bool TryGet<T>(out T guiComponent) where T : GuiSystemModule
         {
-            if (guiComponents.TryGetValue(typeof(T), out var component)) 
+            if (guiModules.TryGetValue(typeof(T), out var component)) 
             {
                 guiComponent = (T)component;
                 return true;

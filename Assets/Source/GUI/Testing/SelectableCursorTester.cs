@@ -1,4 +1,4 @@
-using BZApp.GUI.Components;
+using BZApp.GUI.Modules;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;

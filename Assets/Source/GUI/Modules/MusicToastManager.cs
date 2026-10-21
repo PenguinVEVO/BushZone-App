@@ -8,12 +8,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace BZApp.GUI.Components
+namespace BZApp.GUI.Modules
 {
-    [AddComponentMenu("UI/GUI Components/MusicToastManager")]
-    public class MusicToastManager : GuiComponent
+    [AddComponentMenu("UI/GUI System Modules/MusicToastManager")]
+    public class MusicToastManager : GuiSystemModule
 	{
         // ======================[#]  CONFIGURATION  [#]======================
+
+        [Header("General Settings")]
+        [SerializeField] private float panelResizeBorderWidth;
 
         [Header("Animation Settings")]
 		[SerializeField] private float slideDistance;
@@ -44,6 +47,12 @@ namespace BZApp.GUI.Components
 		private Coroutine toastSlideCoroutine;
 		
 		// ======================[#]  LIFECYCLE FUNCTIONS  [#]======================
+
+		protected override void Awake()
+		{
+			base.Awake();
+			musicToastPanel.gameObject.SetActive(false);
+		}
 
 		private void OnEnable()
 		{
@@ -84,7 +93,7 @@ namespace BZApp.GUI.Components
 			if (toastCoroutine != null)
 				holdTimeElapsed = toastHoldTime;
 			else
-				Debug.LogWarning("[WARNING] MusicToastManager: Cannot dismiss music toast as it is not currently active.");
+				Debug.LogWarning("[WARNING] Cannot dismiss music toast as it is not currently active.");
 		}
 
         // ======================[#]  INTERNAL FUNCTIONS  [#]======================
@@ -94,10 +103,10 @@ namespace BZApp.GUI.Components
 			albumArtImage.sprite = data.AlbumArt;
 			songTitleText.text = data.SongName;
 			songArtistText.text = ""; // Clear it from the previous use
-			for (int i = 0; i < data.ArtistNames.Length; i++)
+			foreach (var names in data.ArtistNames)
 			{
-				songArtistText.text += data.ArtistNames[i];
-				if (data.ArtistNames[i] != data.ArtistNames[^1])
+				songArtistText.text += names;
+				if (names != data.ArtistNames[^1])
 					songArtistText.text += ", ";
 			}
 			songAlbumText.text = data.AlbumName;
@@ -111,6 +120,7 @@ namespace BZApp.GUI.Components
             if (toastSlideCoroutine == null)
 			{
                 SetMusicData(dataToDisplay);
+                musicToastPanel.gameObject.SetActive(true);
                 toastSlideCoroutine = StartCoroutine(SlideToast(slideInCurve, slideDistance));
             }
             else
@@ -136,8 +146,11 @@ namespace BZApp.GUI.Components
 				callForNext = false; // Set false for the next sequence
 				toastCoroutine = StartCoroutine(PlayToastAnimation(queuedData));
 			}
-			else 
+			else
+			{
+				musicToastPanel.gameObject.SetActive(false);
 				toastCoroutine = null;
+			}
         }
 
         private IEnumerator SlideToast(AnimationCurve curve, float slideAmount)
@@ -150,12 +163,12 @@ namespace BZApp.GUI.Components
 			while (timeElapsed < endTime)
 			{
 				musicToastPanel.rectTransform.anchoredPosition = 
-					new(Mathf.Lerp(startPoint, endPoint, curve.Evaluate(timeElapsed)), musicToastPanel.rectTransform.anchoredPosition.y);
+					new Vector2(Mathf.Lerp(startPoint, endPoint, curve.Evaluate(timeElapsed)), musicToastPanel.rectTransform.anchoredPosition.y);
 				timeElapsed += Time.deltaTime;
 				yield return null;
 			}
 
-            musicToastPanel.rectTransform.anchoredPosition = new(endPoint, musicToastPanel.rectTransform.anchoredPosition.y);
+            musicToastPanel.rectTransform.anchoredPosition = new Vector2(endPoint, musicToastPanel.rectTransform.anchoredPosition.y);
 			toastSlideCoroutine = null;
         }
 	}

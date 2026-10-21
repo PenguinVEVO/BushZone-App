@@ -1,6 +1,6 @@
 using UnityEngine.UI;
 
-namespace BZApp.GUI.Components
+namespace BZApp.GUI.Modules
 {
     public class TrackableGlyph
     {

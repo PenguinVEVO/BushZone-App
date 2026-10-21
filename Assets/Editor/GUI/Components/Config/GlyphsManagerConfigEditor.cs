@@ -4,7 +4,7 @@
 
 using System.Linq;
 using System.Text.RegularExpressions;
-using BZApp.GUI.Components;
+using BZApp.GUI.Modules;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;

@@ -12,7 +12,31 @@
   <component name="ChangeListManager">
     <list default="true" id="df7d10df-fd64-45f7-933e-378909d71b6c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BushZone-App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BushZone-App/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Editor/GUI/Components/Config/GlyphsManagerConfigEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/GUI/Components/Config/GlyphsManagerConfigEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevelopmentScenes/GUIComponentTesting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevelopmentScenes/GUIComponentTesting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptTemplates/01-UI__GUI Components__New GUI Component-NewGuiComponent.cs.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScriptTemplates/01-UI__GUI Components__New GUI Component-NewGuiComponent.cs.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Components.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Extras.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Extras/TrackableGlyph.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Extras/TrackableGlyph.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/GlyphsManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/GlyphsManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/MusicToastManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/MusicToastManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/PopupBoxManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/PopupBoxManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/SelectableCursorManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/SelectableCursorManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/GuiComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/GuiComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/GuiSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/GuiSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Testing/SelectableCursorTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Testing/SelectableCursorTester.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,15 +47,16 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="4" />
+    <option name="cachedIndexableFilesCount" value="2" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a91b96e490e84ba9954316d406612e69177000/ef/d888c160/Transform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Editor/GUI/Components/Config/GlyphsManagerConfigEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Source/GUI/Components/RectScrollingText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
@@ -41,61 +66,61 @@
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000001647056662" />
-      <entry key="S2" value="1.032088323464772" />
-      <entry key="S5" value="1.423522246369521" />
-      <entry key="S10" value="2.857502935551404" />
-      <entry key="S30" value="14.33436162594181" />
-      <entry key="S60" value="28.208214398383003" />
-      <entry key="M2" value="41.96060792516672" />
-      <entry key="M5" value="57.081465362907565" />
-      <entry key="M10" value="69.94232681264523" />
-      <entry key="M15" value="78.68265373330092" />
-      <entry key="M30" value="101.49100946213828" />
-      <entry key="H1" value="156.96273367228872" />
-      <entry key="H2" value="289.5426930172483" />
-      <entry key="H4" value="559.3771561485203" />
-      <entry key="D1" value="2475.015162133184" />
-      <entry key="W1" value="4097.717885175846" />
+      <entry key="MS100" value="1.3231096377874818" />
+      <entry key="MS500" value="1.9142127934721296" />
+      <entry key="S2" value="2.529260647825329" />
+      <entry key="S5" value="2.7841867355445946" />
+      <entry key="S10" value="2.886842392796681" />
+      <entry key="S30" value="3.0468973003732267" />
+      <entry key="S60" value="3.9740378136675587" />
+      <entry key="M2" value="6.797398813467899" />
+      <entry key="M5" value="17.2252129467113" />
+      <entry key="M10" value="37.78383421901987" />
+      <entry key="M15" value="57.43141986462551" />
+      <entry key="M30" value="109.76635620297643" />
+      <entry key="H1" value="222.10470538712522" />
+      <entry key="H2" value="440.3193307181712" />
+      <entry key="H4" value="796.289998834321" />
+      <entry key="D1" value="2934.94997332316" />
+      <entry key="W1" value="4869.19305917091" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="5.721777463427825E-18" />
-      <entry key="MS500" value="4.552944728508839E-4" />
-      <entry key="S2" value="0.31533289196075376" />
-      <entry key="S5" value="1.409505420203166" />
-      <entry key="S10" value="2.570976562038427" />
-      <entry key="S30" value="4.85389190205901" />
-      <entry key="S60" value="6.110057298687269" />
-      <entry key="M2" value="6.973253474847461" />
-      <entry key="M5" value="8.290559014951333" />
-      <entry key="M10" value="10.532007002199904" />
-      <entry key="M15" value="12.38840925749733" />
-      <entry key="M30" value="17.676076356284504" />
-      <entry key="H1" value="30.99255029911844" />
-      <entry key="H2" value="60.56867665606101" />
-      <entry key="H4" value="111.8654968185986" />
-      <entry key="D1" value="286.80285550953573" />
-      <entry key="W1" value="373.3638424486584" />
+      <entry key="MS100" value="0.024862929356450188" />
+      <entry key="MS500" value="0.5529000545181824" />
+      <entry key="S2" value="1.3551019936070638" />
+      <entry key="S5" value="1.7008424218454057" />
+      <entry key="S10" value="1.842406149626332" />
+      <entry key="S30" value="1.9729347754873665" />
+      <entry key="S60" value="2.261789693546373" />
+      <entry key="M2" value="3.1108927839780685" />
+      <entry key="M5" value="6.238964713968846" />
+      <entry key="M10" value="10.805269432215903" />
+      <entry key="M15" value="14.642695895632428" />
+      <entry key="M30" value="23.92226631987164" />
+      <entry key="H1" value="37.34805602126935" />
+      <entry key="H2" value="59.97361774174591" />
+      <entry key="H4" value="106.28105542774644" />
+      <entry key="D1" value="320.5047874637045" />
+      <entry key="W1" value="441.94029723782864" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.0705061066098E-18" />
-      <entry key="MS500" value="5.568778305624365E-4" />
-      <entry key="S2" value="0.4082553814499682" />
-      <entry key="S5" value="2.114789479916854" />
-      <entry key="S10" value="4.922284191014753" />
-      <entry key="S30" value="18.921922704137366" />
-      <entry key="S60" value="34.150000014696104" />
-      <entry key="M2" value="48.830928770111704" />
-      <entry key="M5" value="65.3137677075052" />
-      <entry key="M10" value="80.42925727992022" />
-      <entry key="M15" value="91.03179901916629" />
-      <entry key="M30" value="119.13552253074477" />
-      <entry key="H1" value="187.92621657392954" />
-      <entry key="H2" value="350.08136881237135" />
-      <entry key="H4" value="671.2133311583739" />
-      <entry key="D1" value="2761.804135975501" />
-      <entry key="W1" value="4471.079041941756" />
+      <entry key="MS100" value="1.2762361449127397" />
+      <entry key="MS500" value="2.099227783375217" />
+      <entry key="S2" value="3.5640970313675107" />
+      <entry key="S5" value="4.312090305743219" />
+      <entry key="S10" value="4.63330055444437" />
+      <entry key="S30" value="4.983248931244109" />
+      <entry key="S60" value="6.205423611722752" />
+      <entry key="M2" value="9.874470222796845" />
+      <entry key="M5" value="23.42489584270466" />
+      <entry key="M10" value="48.54959214197976" />
+      <entry key="M15" value="72.03664145434031" />
+      <entry key="M30" value="133.65625122291274" />
+      <entry key="H1" value="259.42448198907056" />
+      <entry key="H2" value="500.2668039029238" />
+      <entry key="H4" value="902.5451766730675" />
+      <entry key="D1" value="3255.4397765907615" />
+      <entry key="W1" value="5311.130270945075" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -122,7 +147,7 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;development__main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development__audio&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,

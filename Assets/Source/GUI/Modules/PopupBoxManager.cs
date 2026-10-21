@@ -9,10 +9,10 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-namespace BZApp.GUI.Components
+namespace BZApp.GUI.Modules
 {
-    [AddComponentMenu("UI/GUI Components/PopupBoxManager")]
-    public class PopupBoxManager : GuiComponent
+    [AddComponentMenu("UI/GUI System Modules/PopupBoxManager")]
+    public class PopupBoxManager : GuiSystemModule
     {
         //-------- General Variables --------\\
 

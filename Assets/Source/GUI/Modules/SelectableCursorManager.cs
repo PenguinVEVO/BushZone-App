@@ -15,10 +15,10 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace BZApp.GUI.Components
+namespace BZApp.GUI.Modules
 {
-    [AddComponentMenu("UI/GUI Components/SelectableCursorManager")]
-	public class SelectableCursorManager : GuiComponent
+    [AddComponentMenu("UI/GUI System Modules/SelectableCursorManager")]
+	public class SelectableCursorManager : GuiSystemModule
 	{
         // ======================[#]  CONFIGURATION  [#]======================
 

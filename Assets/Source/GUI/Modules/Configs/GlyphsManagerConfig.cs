@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BZApp.GUI.Components
+namespace BZApp.GUI.Modules
 {
     [CreateAssetMenu(fileName = "GlyphsManagerConfig", menuName = "UI/GUI Components/Configs/GlyphsManagerConfig")]
     public class GlyphsManagerConfig : ScriptableObject

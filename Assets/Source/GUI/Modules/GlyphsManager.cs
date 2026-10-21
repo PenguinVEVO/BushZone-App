@@ -16,10 +16,10 @@ using BZApp.Utilities;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace BZApp.GUI.Components
+namespace BZApp.GUI.Modules
 {
-    [AddComponentMenu("UI/GUI Components/GlyphsManager")]
-	public sealed class GlyphsManager : GuiComponent
+    [AddComponentMenu("UI/GUI System Modules/GlyphsManager")]
+	public sealed class GlyphsManager : GuiSystemModule
 	{
         // ======================[#]  CONFIGURATION  [#]======================
 		

@@ -1,13 +1,13 @@
-//  Base GUI Component
+//  Base GUI System Module
 //  By PenguinVEVO
 //  Created November 2025
 
 using UnityEngine;
 
-namespace BZApp.GUI.Components
+namespace BZApp.GUI.Modules
 {
     [RequireComponent(typeof(GuiSystem))]
-    public abstract class GuiComponent : MonoBehaviour
+    public abstract class GuiSystemModule : MonoBehaviour
     {
         protected GuiSystem guiSystem;
 
