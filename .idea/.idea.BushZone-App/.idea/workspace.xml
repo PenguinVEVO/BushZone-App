@@ -12,31 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="df7d10df-fd64-45f7-933e-378909d71b6c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BushZone-App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BushZone-App/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/GUI/Components/Config/GlyphsManagerConfigEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/GUI/Components/Config/GlyphsManagerConfigEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DevelopmentScenes/GUIComponentTesting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DevelopmentScenes/GUIComponentTesting.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptTemplates/01-UI__GUI Components__New GUI Component-NewGuiComponent.cs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptTemplates/01-UI__GUI Components__New GUI Component-NewGuiComponent.cs.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Components.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Configs/GlyphsManagerConfig.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Extras.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Extras/TrackableGlyph.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/Extras/TrackableGlyph.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/GlyphsManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/GlyphsManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/MusicToastManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/MusicToastManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/PopupBoxManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/PopupBoxManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/SelectableCursorManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Components/SelectableCursorManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/GuiComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/GuiComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/GuiSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/GuiSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Source/GUI/Testing/SelectableCursorTester.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/GUI/Testing/SelectableCursorTester.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1354,7 +1354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runAutomatic: 1
-  scrollSpeed: 64
+  scrollSpeed: 84
   haltTime: 1.5
   boundingRectBox: {fileID: 1963584443}
 --- !u!1 &1275744037
@@ -1520,7 +1520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runAutomatic: 1
-  scrollSpeed: 64
+  scrollSpeed: 84
   haltTime: 1.5
   boundingRectBox: {fileID: 1352428233}
 --- !u!1 &1352428232
@@ -1954,7 +1954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runAutomatic: 1
-  scrollSpeed: 64
+  scrollSpeed: 84
   haltTime: 1.5
   boundingRectBox: {fileID: 1883947877}
 --- !u!1 &1883947876
