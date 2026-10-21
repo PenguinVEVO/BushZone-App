@@ -1,3 +1,7 @@
+//  Rect-Based Text Scrolling Effect
+//  By PenguinVEVO
+//  Created October 2026
+
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -7,6 +11,8 @@ namespace BZApp.GUI
     [RequireComponent(typeof(TextMeshProUGUI))]
     public class RectScrollingText : MonoBehaviour
     {
+        // ======================[#]  CONFIGURATION  [#]======================
+        
         [Header("Scroll Settings")]
         [SerializeField] private bool runAutomatic = true;
         [SerializeField] private float scrollSpeed = 1f;
@@ -15,12 +21,16 @@ namespace BZApp.GUI
         [Header("Dependencies")]
         [SerializeField] private RectTransform boundingRectBox;
         
+        // ======================[#]  INTERNAL VARIABLES/REFERENCES  [#]======================
+        
         // Values
         private Vector3 originalLocalPosition;
         
         // References
         private TextMeshProUGUI thisTextObject;
         private Coroutine scrollCoroutine;
+        
+        // ======================[#]  LIFECYCLE FUNCTIONS  [#]======================
 
         private void Awake()
         {
@@ -39,6 +49,8 @@ namespace BZApp.GUI
             if (!runAutomatic) return;
             StopScrolling(false);
         }
+        
+        // ======================[#]  TEXT SCROLLING API  [#]======================
 
         public void StartScrolling()
         {
@@ -55,6 +67,8 @@ namespace BZApp.GUI
             if (preservePosition) return;
             thisTextObject.rectTransform.localPosition = originalLocalPosition;
         }
+        
+        // ======================[#]  INTERNAL COROUTINES  [#]======================
 
         private IEnumerator ScrollText()
         {
