@@ -1,0 +1,19 @@
+using UnityEngine;
+
+namespace BZApp.GUI.Modules
+{
+    [AddComponentMenu("UI/GUI System Modules/#SCRIPTNAME#")]
+	public class #SCRIPTNAME# : GuiSystemModule
+	{
+		protected override void Awake() 
+		{
+			base.Awake();
+			#NOTRIM#
+		}
+		#NOTRIM#
+		private void Start()
+		{
+			#NOTRIM#
+		}
+	}
+}

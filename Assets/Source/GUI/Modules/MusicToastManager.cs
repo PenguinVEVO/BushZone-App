@@ -1,0 +1,175 @@
+//  Music Toast Manager
+//  By PenguinVEVO
+//  Created November 2025
+
+using BZApp.Systems.Audio;
+using System.Collections;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+namespace BZApp.GUI.Modules
+{
+    [AddComponentMenu("UI/GUI System Modules/MusicToastManager")]
+    public class MusicToastManager : GuiSystemModule
+	{
+        // ======================[#]  CONFIGURATION  [#]======================
+
+        [Header("General Settings")]
+        [SerializeField] private float panelResizeBorderWidth;
+
+        [Header("Animation Settings")]
+		[SerializeField] private float slideDistance;
+		[SerializeField] private AnimationCurve slideInCurve;
+		[SerializeField] private float toastHoldTime;
+		[SerializeField] private AnimationCurve slideOutCurve;
+
+        // ======================[#]  DEPENDENCIES  [#]======================
+
+        [Header("Dependencies")]
+		[SerializeField] private Image musicToastPanel;
+		[SerializeField] private Image albumArtImage;
+		[SerializeField] private TextMeshProUGUI songTitleText;
+		[SerializeField] private TextMeshProUGUI songArtistText;
+		[SerializeField] private TextMeshProUGUI songAlbumText;
+
+		// ======================[#]  INTERNAL REFERENCES  [#]======================
+
+		// Internal values
+		private bool callForNext = false;
+		private float holdTimeElapsed = 0;
+
+		// Internal references
+		private MusicData queuedData;
+
+		// Coroutine references
+		private Coroutine toastCoroutine;
+		private Coroutine toastSlideCoroutine;
+		
+		// ======================[#]  LIFECYCLE FUNCTIONS  [#]======================
+
+		protected override void Awake()
+		{
+			base.Awake();
+			musicToastPanel.gameObject.SetActive(false);
+		}
+
+		private void OnEnable()
+		{
+			AudioManager.OnMusicStarted += InvokeToast;
+			AudioManager.OnMusicStopped += DismissToast;
+		}
+
+		private void OnDisable()
+		{
+			AudioManager.OnMusicStarted -= InvokeToast;
+			AudioManager.OnMusicStopped -= DismissToast;
+		}
+
+        // ======================[#]  PUBLIC MUSIC TOAST API  [#]======================
+
+        /// <summary>
+        /// Invoke the music toast panel to display song information.
+        /// </summary>
+        /// <param name="dataToDisplay">The metadata object of the song.</param>
+        public void InvokeToast(MusicData dataToDisplay)
+		{
+			if (toastCoroutine != null)
+			{
+                holdTimeElapsed = toastHoldTime;
+                queuedData = dataToDisplay;
+                callForNext = true;
+            }
+            else 
+				toastCoroutine = StartCoroutine(PlayToastAnimation(dataToDisplay));
+        }
+
+		/// <summary>
+		/// Manually invoke the dismissal of the music toast panel.
+		/// </summary>
+		public void DismissToast()
+		{
+			// This check has to stay here in the case of other classes calling this
+			if (toastCoroutine != null)
+				holdTimeElapsed = toastHoldTime;
+			else
+				Debug.LogWarning("[WARNING] Cannot dismiss music toast as it is not currently active.");
+		}
+
+        // ======================[#]  INTERNAL FUNCTIONS  [#]======================
+
+        private void SetMusicData(MusicData data)
+		{
+			albumArtImage.sprite = data.AlbumArt;
+			songTitleText.text = data.SongName;
+			songArtistText.text = ""; // Clear it from the previous use
+			foreach (var names in data.ArtistNames)
+			{
+				songArtistText.text += names;
+				if (names != data.ArtistNames[^1])
+					songArtistText.text += ", ";
+			}
+			songAlbumText.text = data.AlbumName;
+		}
+        
+		// ======================[#]  INTERNAL COROUTINES  [#]======================
+
+		private IEnumerator PlayToastAnimation(MusicData dataToDisplay)
+		{
+			// Slide in
+            if (toastSlideCoroutine == null)
+			{
+                SetMusicData(dataToDisplay);
+                musicToastPanel.gameObject.SetActive(true);
+                toastSlideCoroutine = StartCoroutine(SlideToast(slideInCurve, slideDistance));
+            }
+            else
+			{
+                holdTimeElapsed = toastHoldTime;
+				callForNext = true;
+            }
+			yield return new WaitUntil(() => toastSlideCoroutine == null);
+
+            // Hold
+            holdTimeElapsed = 0;
+            while (holdTimeElapsed < toastHoldTime)
+			{
+				holdTimeElapsed += Time.deltaTime;
+				yield return null;
+			}
+
+			// Slide out
+			toastSlideCoroutine = StartCoroutine(SlideToast(slideOutCurve, -slideDistance));
+            yield return new WaitUntil(() => toastSlideCoroutine == null);
+			if (callForNext)
+			{
+				callForNext = false; // Set false for the next sequence
+				toastCoroutine = StartCoroutine(PlayToastAnimation(queuedData));
+			}
+			else
+			{
+				musicToastPanel.gameObject.SetActive(false);
+				toastCoroutine = null;
+			}
+        }
+
+        private IEnumerator SlideToast(AnimationCurve curve, float slideAmount)
+		{
+			float timeElapsed = 0;
+			float endTime = curve.keys[^1].time;
+			float startPoint = musicToastPanel.rectTransform.anchoredPosition.x;
+			float endPoint = startPoint + slideAmount;
+
+			while (timeElapsed < endTime)
+			{
+				musicToastPanel.rectTransform.anchoredPosition = 
+					new Vector2(Mathf.Lerp(startPoint, endPoint, curve.Evaluate(timeElapsed)), musicToastPanel.rectTransform.anchoredPosition.y);
+				timeElapsed += Time.deltaTime;
+				yield return null;
+			}
+
+            musicToastPanel.rectTransform.anchoredPosition = new Vector2(endPoint, musicToastPanel.rectTransform.anchoredPosition.y);
+			toastSlideCoroutine = null;
+        }
+	}
+}
