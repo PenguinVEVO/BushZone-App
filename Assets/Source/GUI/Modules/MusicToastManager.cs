@@ -2,7 +2,7 @@
 //  By PenguinVEVO
 //  Created November 2025
 
-using BZApp.Systems.Audio;
+using BZApp.Audio;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -14,9 +14,6 @@ namespace BZApp.GUI.Modules
     public class MusicToastManager : GuiSystemModule
 	{
         // ======================[#]  CONFIGURATION  [#]======================
-
-        [Header("General Settings")]
-        [SerializeField] private float panelResizeBorderWidth;
 
         [Header("Animation Settings")]
 		[SerializeField] private float slideDistance;
@@ -40,7 +37,7 @@ namespace BZApp.GUI.Modules
 		private float holdTimeElapsed = 0;
 
 		// Internal references
-		private MusicData queuedData;
+		private MusicMetadata queuedData;
 
 		// Coroutine references
 		private Coroutine toastCoroutine;
@@ -72,7 +69,7 @@ namespace BZApp.GUI.Modules
         /// Invoke the music toast panel to display song information.
         /// </summary>
         /// <param name="dataToDisplay">The metadata object of the song.</param>
-        public void InvokeToast(MusicData dataToDisplay)
+        public void InvokeToast(MusicMetadata dataToDisplay)
 		{
 			if (toastCoroutine != null)
 			{
@@ -98,7 +95,7 @@ namespace BZApp.GUI.Modules
 
         // ======================[#]  INTERNAL FUNCTIONS  [#]======================
 
-        private void SetMusicData(MusicData data)
+        private void SetMusicData(MusicMetadata data)
 		{
 			albumArtImage.sprite = data.AlbumArt;
 			songTitleText.text = data.SongName;
@@ -114,7 +111,7 @@ namespace BZApp.GUI.Modules
         
 		// ======================[#]  INTERNAL COROUTINES  [#]======================
 
-		private IEnumerator PlayToastAnimation(MusicData dataToDisplay)
+		private IEnumerator PlayToastAnimation(MusicMetadata dataToDisplay)
 		{
 			// Slide in
             if (toastSlideCoroutine == null)

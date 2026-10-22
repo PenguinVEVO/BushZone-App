@@ -243,15 +243,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd14df0f27671f499ab46fbbb1245d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicClips:
-  - {fileID: 11400000, guid: a91565ea223ba21489c95ae560e2296b, type: 2}
-  - {fileID: 11400000, guid: 36739f5b30d721d4c8957ddc1000442f, type: 2}
-  - {fileID: 11400000, guid: 1dc69c20ba80fb948b4599c130c30524, type: 2}
-  - {fileID: 11400000, guid: 0e8039f4bb086cc429749d513a55f339, type: 2}
-  - {fileID: 11400000, guid: c4f86167e5f32aa4eac2a09dc011bb6b, type: 2}
-  sfxClips: []
+  musicLibrary: {fileID: 11400000, guid: 4f2411d46434b1441addb901ab33332e, type: 2}
+  sfxLibrary: {fileID: 11400000, guid: bf4dbdce5a496ba43800c22735695956, type: 2}
   loadIntoDDOL: 0
-  musicVoiceCount: 1
+  musicTransitionType: 0
   musicFadeInCurve:
     serializedVersion: 2
     m_Curve:
@@ -2124,7 +2119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db56b04d7e9671f43a15bc9da5d1814b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelResizeBorderWidth: 0
   slideDistance: 620
   slideInCurve:
     serializedVersion: 2

@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace BZApp.Systems.Audio
+namespace BZApp.Audio
 {
     [AddComponentMenu("Audio/Audio Manager")]
     public class AudioManager : MonoBehaviour
@@ -17,18 +17,21 @@ namespace BZApp.Systems.Audio
         // ======================[#]  CONFIGURATION  [#]======================
 
         [Header("Audio Library")]
-        [SerializeField] private List<MusicData> musicClips;
-        [SerializeField] private List<AudioClip> sfxClips;
+        [SerializeField] private MusicLibrary musicLibrary;
+        [SerializeField] private ClipLibrary sfxLibrary;
 
         [Header("General Settings")]
-        [Tooltip("Automatically load the Audio Manager and associated objects into Don't Destroy On Load. Note that this will cause conflictions if a scene-local Audio Manager exists.")]
+        [Tooltip("Automatically load the Audio Manager and associated objects into Don't Destroy On Load. " +
+            "Note that this will cause conflictions if a scene-local Audio Manager exists.")]
         [SerializeField] private bool loadIntoDDOL = true;
 
         [Header("Voice Settings")]
-        [SerializeField, Range(1, 2)] private int musicVoiceCount = 1;
-        [Tooltip("The curve for fading in music. Will be used when crossfading multiple music voices.")]
+        [SerializeField] private TransitionType musicTransitionType = TransitionType.FadeOut;
+        [Tooltip("The curve for fading in music. Will be used when crossfading multiple music voices. " +
+            "Make sure to only adjust the timing as the value must be 0-1.")]
         [SerializeField] private AnimationCurve musicFadeInCurve = AnimationCurve.Linear(0, 0, 1, 1);
-        [Tooltip("The curve for fading out music. Will be used when either fading out to a new song on one music voice or crossfading multiple music voices.")]
+        [Tooltip("The curve for fading out music. Will be used when either fading out to a new song on one music voice or crossfading multiple music voices. " +
+            "Make sure to only adjust the timing as the value must be 0-1.")]
         [SerializeField] private AnimationCurve musicFadeOutCurve = AnimationCurve.Linear(0, 1, 1, 0);
         [Space(5)]
         [Tooltip("Note: a minimum of two SFX voices is required—one for general SFX and another for system sounds, such as error messages.")]
@@ -43,13 +46,13 @@ namespace BZApp.Systems.Audio
         
         // Internal values
         private float currentGlobalVolume;
+        private enum TransitionType { FadeOut, Crossfade }
 
         // Object references
         private GameObject audioSourcesParent;
         
         // Value/reference collections
         private readonly Dictionary<string, int> musicClipDictionary = new();
-        private readonly Dictionary<string, int> sfxClipDictionary = new();
         private readonly List<AudioSource> musicVoices = new();
         private readonly List<AudioSource> sfxVoices = new();
         
@@ -62,7 +65,7 @@ namespace BZApp.Systems.Audio
         public static AudioManager Instance { get; private set; }
         
         // Events
-        public static event Action<MusicData> OnMusicStarted;
+        public static event Action<MusicMetadata> OnMusicStarted;
         public static event Action OnMusicStopped;
         
         // ======================[#]  LIFECYCLE FUNCTIONS  [#]======================
@@ -76,9 +79,9 @@ namespace BZApp.Systems.Audio
 
             // Setting up the voices
             audioSourcesParent = new GameObject("Audio Manager Voices");
-            for (int i = 0; i < musicVoiceCount; i++)
+            for (int i = 0; i <= (int)musicTransitionType; i++)
             {
-                GameObject newMusicVoiceObject = new GameObject($"Music Voice {i + 1}")
+                GameObject newMusicVoiceObject = new($"Music Voice {i + 1}")
                 {
                     transform = { parent = audioSourcesParent.transform }
                 };
@@ -87,7 +90,7 @@ namespace BZApp.Systems.Audio
             }
             for (int i = 0; i <  sfxVoiceCount; i++)
             {
-                GameObject newSfxVoiceObject = new GameObject($"SFX Voice {i + 1}")
+                GameObject newSfxVoiceObject = new($"SFX Voice {i + 1}")
                 {
                     transform = { parent = audioSourcesParent.transform }
                 };
@@ -104,12 +107,8 @@ namespace BZApp.Systems.Audio
             }
 
             // Initialise sound ID dictionaries
-            int clipIndex = 0; // Note: not sure if this method is robust enough
-            foreach (MusicData clip in musicClips)
-                musicClipDictionary.Add(clip.SongName, clipIndex++);
-            clipIndex = 0;
-            foreach (AudioClip clip in sfxClips)
-                sfxClipDictionary.Add(clip.name, clipIndex++);
+            musicLibrary.InitialiseDictionary();
+            sfxLibrary.InitialiseDictionary();
         }
 
         private void Start() => UpdateGlobalVolumes();
@@ -119,8 +118,14 @@ namespace BZApp.Systems.Audio
             // Updating the global volume of voices (for debugging)
             if (currentGlobalVolume != globalVolume) UpdateGlobalVolumes();
         }
-        
+
         // ======================[#]  PUBLIC AUDIO MANAGER API  [#]======================
+
+        /// <summary>
+        /// Play a music track from the music track library.
+        /// </summary>
+        /// <param name="clipName">The name of the music track (used to get the ID).</param>
+        public void PlayMusic(string clipName) => PlayMusic(musicClipDictionary[clipName]);
 
         /// <summary>
         /// Play a music track from the music track library.
@@ -128,30 +133,31 @@ namespace BZApp.Systems.Audio
         /// <param name="id">The ID of the music track.</param>
         public void PlayMusic(int id)
         {
-            switch (musicVoiceCount)
+            switch (musicTransitionType)
             {
-                case 1:
+                case TransitionType.FadeOut:
                     if (!musicVoices[^1].isPlaying)
                     {
-                        musicVoices[^1].clip = musicClips[id].SongClip;
+                        musicVoices[^1].clip = musicLibrary.TracksById[id].SongClip;
+                        musicVoices[0].volume = currentGlobalVolume;
                         musicVoices[^1].Play();
-                        OnMusicStarted?.Invoke(musicClips[id]);
+                        OnMusicStarted?.Invoke(musicLibrary.TracksById[id]);
                         if (logOptions.ShowInfoLogs) Debug.Log($"[INFO] Music clip with ID {id} now playing.");
                         return;
                     }
                     if (musicFadeCoroutine != null)
                         StopCoroutine(musicFadeCoroutine);
-                    musicFadeCoroutine = StartCoroutine(SingleMusicVoiceFade(musicVoices[^1], musicClips[id]));
+                    musicFadeCoroutine = StartCoroutine(SingleMusicVoiceFade(musicVoices[^1], musicLibrary.TracksById[id]));
                     if (logOptions.ShowInfoLogs) Debug.Log($"[INFO] Music clip with ID {id} now playing.");
                     break;
-                case 2:
+                case TransitionType.Crossfade:
                     // If no voices are playing anything
                     if (!musicVoices.Any(v => v.isPlaying))
                     {
-                        musicVoices[0].clip = musicClips[id].SongClip;
-                        musicVoices[0].volume = 1;
+                        musicVoices[0].clip = musicLibrary.TracksById[id].SongClip;
+                        musicVoices[0].volume = currentGlobalVolume;
                         musicVoices[0].Play();
-                        OnMusicStarted?.Invoke(musicClips[id]);
+                        OnMusicStarted?.Invoke(musicLibrary.TracksById[id]);
                         return;
                     }
 
@@ -164,17 +170,11 @@ namespace BZApp.Systems.Audio
                     }
                     if (musicFadeCoroutine != null)
                         StopCoroutine(musicFadeCoroutine);
-                    musicFadeCoroutine = StartCoroutine(DoubleMusicVoiceCrossfade(oldVoice, newVoice, musicClips[id]));
+                    musicFadeCoroutine = StartCoroutine(DoubleMusicVoiceCrossfade(oldVoice, newVoice, musicLibrary.TracksById[id]));
                     break;
 
             }
         }
-
-        /// <summary>
-        /// Play a music track from the music track library.
-        /// </summary>
-        /// <param name="clipName">The name of the music track (used to get the ID).</param>
-        public void PlayMusic(string clipName) => PlayMusic(musicClipDictionary[clipName]);
 
         /// <summary>
         /// Play an SFX clip from the SFX clip library.
@@ -186,7 +186,7 @@ namespace BZApp.Systems.Audio
         /// Play an SFX clip from the SFX clip library.
         /// </summary>
         /// <param name="clipName">The name of the SFX clip (used to get the ID).</param>
-        public void PlaySFX(string clipName) => PlaySFX(sfxClipDictionary[clipName], false);
+        public void PlaySFX(string clipName) => PlaySFX(sfxLibrary.ClipsByName[clipName], false);
 
         /// <summary>
         /// Play an SFX clip from the SFX clip library.
@@ -200,7 +200,7 @@ namespace BZApp.Systems.Audio
                 switch (overrideCurrentVoice)
                 {
                     case true:
-                        if (sfxVoices[i].clip != sfxClips[id])
+                        if (sfxVoices[i].clip != sfxLibrary.ClipsById[id])
                         {
                             if (i != sfxVoices.Count - 1) continue;
                             // If it reaches this point, the clip isn't currently playing anywhere so just go to a free voice as normal
@@ -208,23 +208,23 @@ namespace BZApp.Systems.Audio
                             return;
                         }
                         sfxVoices[i].Stop();
-                        sfxVoices[i].clip = sfxClips[id];
+                        sfxVoices[i].clip = sfxLibrary.ClipsById[id];
                         sfxVoices[i].Play();
-                        if (logOptions.ShowInfoLogs) Debug.Log($"[INFO] AudioManager: Overriding clip now playing on SFX voice {i}.");
+                        if (logOptions.ShowInfoLogs) Debug.Log($"[INFO] Overriding clip now playing on SFX voice {i}.");
                         break;
                     case false:
                         if (sfxVoices[i].isPlaying) continue;
-                        sfxVoices[i].clip = sfxClips[id];
+                        sfxVoices[i].clip = sfxLibrary.ClipsById[id];
                         sfxVoices[i].Play();
-                        if (logOptions.ShowInfoLogs) Debug.Log($"[INFO] AudioManager: Clip now playing on SFX voice {i}.");
+                        if (logOptions.ShowInfoLogs) Debug.Log($"[INFO] Clip now playing on SFX voice {i}.");
                         break;
                 }
                 return;
             }
 
-            sfxVoices[fallbackSfxVoice].clip = sfxClips[id];
+            sfxVoices[fallbackSfxVoice].clip = sfxLibrary.ClipsById[id];
             sfxVoices[fallbackSfxVoice].Play();
-            if (logOptions.ShowWarningLogs) Debug.LogWarning($"[WARNING] AudioManager: No free SFX voices were found. Clip now playing on SFX voice {fallbackSfxVoice} (fallback).");
+            if (logOptions.ShowWarningLogs) Debug.LogWarning($"[WARNING] No free SFX voices were found. Clip now playing on SFX voice {fallbackSfxVoice} (fallback).");
         }
 
         /// <summary>
@@ -232,7 +232,7 @@ namespace BZApp.Systems.Audio
         /// </summary>
         /// <param name="clipName">The name of the SFX clip (used to get the ID).</param>
         /// <param name="overrideCurrentVoice">If the specified clip is playing on a voice already, override that voice</param>
-        public void PlaySFX(string clipName, bool overrideCurrentVoice) => PlaySFX(sfxClipDictionary[clipName], overrideCurrentVoice);
+        public void PlaySFX(string clipName, bool overrideCurrentVoice) => PlaySFX(sfxLibrary.ClipsByName[clipName], overrideCurrentVoice);
 
         public bool IsMusicFadeRunning() { return musicFadeCoroutine == null; }
         
@@ -258,7 +258,7 @@ namespace BZApp.Systems.Audio
         
         // ======================[#]  INTERNAL COROUTINES  [#]======================
 
-        private IEnumerator SingleMusicVoiceFade(AudioSource voiceToFade, MusicData newClipData)
+        private IEnumerator SingleMusicVoiceFade(AudioSource voiceToFade, MusicMetadata newClipData)
         {
             OnMusicStopped?.Invoke();
 
@@ -267,20 +267,20 @@ namespace BZApp.Systems.Audio
 
             while (timeElapsed < endTime)
             {
-                voiceToFade.volume = Mathf.Clamp(musicFadeOutCurve.Evaluate(timeElapsed), 0, 1);
+                voiceToFade.volume = currentGlobalVolume * musicFadeOutCurve.Evaluate(timeElapsed);
                 timeElapsed += Time.deltaTime;
                 yield return null;
             }
 
             voiceToFade.Stop();
             voiceToFade.clip = newClipData.SongClip;
-            voiceToFade.volume = 1;
+            voiceToFade.volume = currentGlobalVolume;
             voiceToFade.Play();
             OnMusicStarted?.Invoke(newClipData);
             musicFadeCoroutine = null;
         }
 
-        private IEnumerator DoubleMusicVoiceCrossfade(AudioSource oldVoice, AudioSource newVoice, MusicData newClipData)
+        private IEnumerator DoubleMusicVoiceCrossfade(AudioSource oldVoice, AudioSource newVoice, MusicMetadata newClipData)
         {
             float timeElapsed = 0;
             float oldVoiceEndTime = musicFadeOutCurve.keys[^1].time,
@@ -294,13 +294,13 @@ namespace BZApp.Systems.Audio
             OnMusicStarted?.Invoke(newClipData);
             while (timeElapsed < latestEndTime)
             {
-                oldVoice.volume = Mathf.Clamp(musicFadeOutCurve.Evaluate(timeElapsed), 0, 1);
-                newVoice.volume = Mathf.Clamp(musicFadeInCurve.Evaluate(timeElapsed), 0, 1);
+                oldVoice.volume = currentGlobalVolume * musicFadeOutCurve.Evaluate(timeElapsed);
+                newVoice.volume = currentGlobalVolume * musicFadeInCurve.Evaluate(timeElapsed);
                 timeElapsed += Time.deltaTime;
                 yield return null;
             }
 
-            newVoice.volume = 1;
+            newVoice.volume = currentGlobalVolume;
             oldVoice.Stop();
             musicFadeCoroutine = null;
         }

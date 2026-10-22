@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226405df775c7b94db724cad4f520c41, type: 3}
+  m_Name: BZMusicLibrary
+  m_EditorClassIdentifier: 
+  tracks:
+  - {fileID: 11400000, guid: a91565ea223ba21489c95ae560e2296b, type: 2}
+  - {fileID: 11400000, guid: 36739f5b30d721d4c8957ddc1000442f, type: 2}
+  - {fileID: 11400000, guid: 1dc69c20ba80fb948b4599c130c30524, type: 2}
+  - {fileID: 11400000, guid: 0e8039f4bb086cc429749d513a55f339, type: 2}
+  - {fileID: 11400000, guid: c4f86167e5f32aa4eac2a09dc011bb6b, type: 2}
