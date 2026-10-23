@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee4160d98e57a34b992e59e4777b422, type: 3}
   m_Name: BZSfxLibrary
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 8300000, guid: e02228bbc5ee669c6b194557bf686cc1, type: 3}
+  - {fileID: 8300000, guid: f354ef6b2b9441847aabe1991e607c1b, type: 3}
