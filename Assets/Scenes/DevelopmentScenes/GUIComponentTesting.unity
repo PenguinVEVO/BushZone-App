@@ -1453,26 +1453,6 @@ PrefabInstance:
       propertyPath: m_enableWordWrapping
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4016969759020199946, guid: a9d1c32be4dce227a9941410821c21cb,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4016969759020199946, guid: a9d1c32be4dce227a9941410821c21cb,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4016969759020199946, guid: a9d1c32be4dce227a9941410821c21cb,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4016969759020199946, guid: a9d1c32be4dce227a9941410821c21cb,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8037570408061825804, guid: a9d1c32be4dce227a9941410821c21cb,
         type: 3}
       propertyPath: m_Name
