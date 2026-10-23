@@ -1,9 +1,0 @@
-﻿<Solution>
-  <Project Path="BZApp.Core.csproj" />
-  <Project Path="BZApp-Editor.GUI.csproj" />
-  <Project Path="BZApp.GUI.csproj" />
-  <Project Path="BZApp.Audio.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="Assembly-CSharp-Editor.csproj" />
-  <Project Path="BZApp.Prototyping.csproj" />
-</Solution>

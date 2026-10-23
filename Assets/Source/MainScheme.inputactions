@@ -581,17 +581,6 @@
             ]
         },
         {
-            "name": "Generic Gamepad",
-            "bindingGroup": "Generic Gamepad",
-            "devices": [
-                {
-                    "devicePath": "<Gamepad>",
-                    "isOptional": false,
-                    "isOR": false
-                }
-            ]
-        },
-        {
             "name": "Xbox Controller",
             "bindingGroup": "Xbox Controller",
             "devices": [
@@ -619,6 +608,17 @@
             "devices": [
                 {
                     "devicePath": "<SwitchProControllerHID>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Generic Gamepad",
+            "bindingGroup": "Generic Gamepad",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
                     "isOptional": false,
                     "isOR": false
                 }

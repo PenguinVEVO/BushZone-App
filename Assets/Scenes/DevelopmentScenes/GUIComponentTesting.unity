@@ -1407,6 +1407,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  confirmActionMapName: Menus
+  confirmActionName: Confirm
   popupImageComponent: {fileID: 2005037192}
   popupBackgroundComponent: {fileID: 2005037193}
   popupTextComponent: {fileID: 2005037191}
@@ -1703,6 +1705,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 508820736955467731, guid: 71c84b2cd848bf16e9b9e9581204980f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508820736955467731, guid: 71c84b2cd848bf16e9b9e9581204980f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010343350862755832, guid: 71c84b2cd848bf16e9b9e9581204980f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010343350862755832, guid: 71c84b2cd848bf16e9b9e9581204980f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1510532985285175305, guid: 71c84b2cd848bf16e9b9e9581204980f,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1716,6 +1738,16 @@ PrefabInstance:
     - target: {fileID: 1510532985285175305, guid: 71c84b2cd848bf16e9b9e9581204980f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404712397661461492, guid: 71c84b2cd848bf16e9b9e9581204980f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3404712397661461492, guid: 71c84b2cd848bf16e9b9e9581204980f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3522935988391361210, guid: 71c84b2cd848bf16e9b9e9581204980f,

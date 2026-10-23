@@ -55,15 +55,15 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeUpCurve.m_Curve.Array.data[0].value
-    value: 0.5
+    value: 0.7
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeUpCurve.m_Curve.Array.data[0].inSlope
-    value: 4.5083766
+    value: 2.9800932
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeUpCurve.m_Curve.Array.data[0].outSlope
-    value: 4.5083766
+    value: 2.9800932
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeUpCurve.m_Curve.Array.data[0].tangentMode
@@ -79,7 +79,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeUpCurve.m_Curve.Array.data[0].outWeight
-    value: 0.05138263
+    value: 0.09994659
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeUpCurve.m_Curve.Array.data[1].time
@@ -167,15 +167,15 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeDownCurve.m_Curve.Array.data[1].value
-    value: 0.5
+    value: 0.7
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeDownCurve.m_Curve.Array.data[1].inSlope
-    value: -3.3981388
+    value: -2.645362
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeDownCurve.m_Curve.Array.data[1].outSlope
-    value: -3.3981388
+    value: -2.645362
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeDownCurve.m_Curve.Array.data[1].tangentMode
@@ -187,7 +187,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeDownCurve.m_Curve.Array.data[1].inWeight
-    value: 0.029460588
+    value: 0.08355826
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: sizeDownCurve.m_Curve.Array.data[1].outWeight
@@ -284,6 +284,14 @@ Preset:
   - target: {fileID: 0}
     propertyPath: buttonCurve.m_RotationOrder
     value: 4
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: confirmActionMapName
+    value: Menus
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: confirmActionName
+    value: Confirm
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: popupImageComponent

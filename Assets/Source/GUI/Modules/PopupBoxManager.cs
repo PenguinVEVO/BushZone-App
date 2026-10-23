@@ -14,20 +14,25 @@ namespace BZApp.GUI.Modules
     [AddComponentMenu("UI/GUI System Modules/PopupBoxManager")]
     public class PopupBoxManager : GuiSystemModule
     {
-        //-------- General Variables --------\\
+        //-------- Configuration --------\\
 
         [Header("General Settings")] 
         [SerializeField] private float fadeTime;
         [SerializeField] private Color darkenedBackgroundColor = new(0, 0, 0, 150 / 255);
-        
+
+        [Header("Animation Settings")]
         [SerializeField] private AnimationCurve sizeUpCurve;
         [SerializeField] private AnimationCurve sizeDownCurve;
         [SerializeField] private AnimationCurve buttonCurve;
 
-        //-------- Object References --------\\
+        [Header("Input Settings")]
+        [SerializeField] private string confirmActionMapName;
+        [SerializeField] private string confirmActionName;
 
-        [Header("Object References")] [SerializeField]
-        private Image popupImageComponent;
+        //-------- Dependencies --------\\
+
+        [Header("Dependencies")] 
+        [SerializeField] private Image popupImageComponent;
         [SerializeField] private Image popupBackgroundComponent;
         [SerializeField] private TextMeshProUGUI popupTextComponent;
         [SerializeField] private Image exitButtonComponent;
@@ -38,6 +43,9 @@ namespace BZApp.GUI.Modules
         private Component[] popupElements;
         private bool isActive;
         private Coroutine flash;
+        private InputAction confirmAction;
+        private GlyphsManager glyphsManager;
+        private TrackableGlyph confirmGlyph;
 
         //-------- Lifecycle Functions --------\\
 
@@ -52,9 +60,14 @@ namespace BZApp.GUI.Modules
                 exitButtonComponent
             };
             originalPopupBoxSize = popupImageComponent.rectTransform.localScale;
+            confirmAction = InputSystem.actions.FindActionMap(confirmActionMapName).FindAction(confirmActionName);
         }
 
-        private void Start() => Deactivated();
+        private void Start()
+        {
+            glyphsManager = GuiSystem.Instance.Get<GlyphsManager>();
+            Deactivated();
+        }
 
         //--------Internal Functions --------\\
         
@@ -79,8 +92,11 @@ namespace BZApp.GUI.Modules
                     image.enabled = true;
                 else if (component is TextMeshProUGUI text)
                     text.enabled = true;
+            exitButtonComponent.sprite = glyphsManager.GetGlyph(confirmActionMapName, confirmActionName);
+            confirmGlyph = new TrackableGlyph(exitButtonComponent, confirmActionMapName, confirmActionName);
+            glyphsManager.StartTrackingGlyph(confirmGlyph);
             flash = StartCoroutine(ButtonFlash());
-            StartCoroutine(InputDetection());
+            confirmAction.performed += OnConfirm;
         }
 
         //-------- Main Popup API --------\\
@@ -121,15 +137,9 @@ namespace BZApp.GUI.Modules
             StartCoroutine(guiSystem.FadeElementsOverTime(new TextMeshProUGUI[1] { popupTextComponent }, Color.black, Color.clear, fadeTime));
             exitButtonComponent.enabled = false;
             yield return StartCoroutine(guiSystem.ScaleElementsOverTime(popupImageComponent.rectTransform, sizeDownCurve));
-            Deactivated();
-        }
-
-        private IEnumerator InputDetection()
-        {
-            flash = StartCoroutine(ButtonFlash());
-            yield return new WaitUntil(() => Keyboard.current.spaceKey.wasPressedThisFrame);
             StopCoroutine(flash);
-            DismissPopupBox();
+            glyphsManager.StopTrackingGlyph(confirmGlyph);
+            Deactivated();
         }
 
         private IEnumerator ButtonFlash()
@@ -140,6 +150,14 @@ namespace BZApp.GUI.Modules
                 StartCoroutine(guiSystem.FadeElementsOverTime(exitButtonComponent, ExtColour.ClearWhite, Color.white, buttonCurve));
                 yield return new WaitForSeconds(flashTime);
             }
+        }
+
+        //-------- Input System Hooks --------\\
+
+        private void OnConfirm(InputAction.CallbackContext context)
+        {
+            confirmAction.performed -= OnConfirm;
+            DismissPopupBox();
         }
     }
 }
