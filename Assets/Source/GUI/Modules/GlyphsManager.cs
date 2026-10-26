@@ -70,14 +70,15 @@ namespace BZApp.GUI.Modules
 		        Debug.LogError($"[ERROR] Could not find action {actionName} in action map {actionMapName}!");
 		        return config.ErrorGlyphSprite;
 	        }
-	        
-	        // Get all the supported devices of the current control scheme (to get the glyph via the scheme rather than specific device)
-	        InputControlScheme currentScheme = InputSystem.actions.controlSchemes.FirstOrDefault(s => s.SupportsDevice(lastKnownDevice));
-	        var supportedDeviceNames = new string[currentScheme.deviceRequirements.Count];
+
+            // Get all the supported devices of the current control scheme (to get the glyph via the scheme rather than specific device)
+            // TODO: This just finds the gamepad as it's the first scheme to show up that supports, say, Xbox controller, and the Xbox controller scheme does come after but isn't reached. Find a way to find the more relevant control scheme instead of just Gamepad.
+            InputControlScheme currentScheme = InputSystem.actions.controlSchemes.FirstOrDefault(s => s.SupportsDevice(lastKnownDevice));
+	        var supportedDeviceNames = new string[currentScheme.deviceRequirements.Count + 1];
 	        int iteration = 0;
 	        supportedDeviceNames[iteration++] = lastKnownDevice.name;
 	        foreach (InputControlScheme.DeviceRequirement requirement in currentScheme.deviceRequirements
-		                 .Where(d =>!d.controlPath.Contains(lastKnownDevice.name)))
+		                 .Where(d => !d.controlPath.Contains(lastKnownDevice.name)))
 	        {
 		        string originalDeviceName = requirement.controlPath;
 		        string cleanDeviceName = originalDeviceName.Replace("<", "").Replace(">", "");
@@ -93,20 +94,25 @@ namespace BZApp.GUI.Modules
 		        {
 			        // Find the glyph list for each device in this control scheme. This first bit weeds out any unsupported devices in the control scheme.
 			        List<GlyphEntry> foundList = config.GetGlyphList(device);
+					string alternativeLayout = string.Empty;
 			        if (foundList == null)
 			        {
 				        foreach (var layout in config.ControllerLayouts)
 				        {
 					        if (!InputSystem.IsFirstLayoutBasedOnSecond(lastKnownDevice.layout, layout)) continue;
-					        foundList = config.GetGlyphList(layout);
+							alternativeLayout = layout;
+					        foundList = config.GetGlyphList(alternativeLayout);
 					        break;
 				        }
 				        if (foundList == null) continue; // If it's still null, just end the search
 			        }
-			        
-			        // This next bit tries to get the glyph for the current device and skips over if it's not found
-			        // (for example, mouse was passed through but it's keyboard that has the control)
-			        GlyphEntry foundEntry = foundList.Find(g => g.GlyphPath == control.path);
+
+					// This next bit tries to get the glyph for the current device and skips over if it's not found
+					// (for example, mouse was passed through but it's keyboard that has the control)
+					string controlPath = control.path;
+					if (!string.IsNullOrEmpty(alternativeLayout))
+                        controlPath = controlPath.Replace(lastKnownDevice.layout, alternativeLayout);
+                    GlyphEntry foundEntry = foundList.Find(g => g.GlyphPath == controlPath);
 			        if (foundEntry == null) continue; // Likely not the right device in the control scheme
 			        if (logOptions.ShowInfoLogs) 
 				        Debug.Log($"[INFO] Returned glyph {foundEntry.GlyphSprite.name} for input action \"{actionName}\".");

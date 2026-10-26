@@ -13,30 +13,30 @@ namespace BZApp.GUI.Modules
     {
         public List<GlyphEntry> KeyboardGlyphSprites = new();
         public List<GlyphEntry> MouseGlyphSprites = new();
-        public List<GlyphEntry> GamepadGlyphSprites = new();
         public List<GlyphEntry> XboxGlyphSprites = new();
         public List<GlyphEntry> PlaystationGlyphSprites = new();
         public List<GlyphEntry> SwitchProGlyphSprites = new();
+        public List<GlyphEntry> GamepadGlyphSprites = new();
         public Sprite ErrorGlyphSprite;
         
         public string[] ControllerLayouts { get; } =
         {
             "Keyboard",
             "Mouse",
-            "Gamepad",
             "XInputController",
             "DualShockGamepad",
-            "SwitchProControllerHID"
+            "SwitchProControllerHID",
+            "Gamepad"
         };
 
         public List<GlyphEntry> GetGlyphList(string layoutName) => layoutName switch
         {
             "Keyboard" => KeyboardGlyphSprites,
             "Mouse" => MouseGlyphSprites,
-            "Gamepad" => GamepadGlyphSprites,
             "XInputController" => XboxGlyphSprites,
             "DualShockGamepad" => PlaystationGlyphSprites,
             "SwitchProControllerHID" => SwitchProGlyphSprites,
+            "Gamepad" => GamepadGlyphSprites,
             _ => null
         };
     }

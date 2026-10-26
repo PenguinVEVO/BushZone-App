@@ -1,9 +1,9 @@
 using UnityEngine;
 
-namespace BZApp.Systems.Audio
+namespace BZApp.Audio
 {
-    [CreateAssetMenu(fileName = "NewMusicData", menuName = "Audio/Music Data")]
-    public class MusicData : ScriptableObject
+    [CreateAssetMenu(fileName = "NewMusicData", menuName = "Audio/Audio Manager/New Music Metadata")]
+    public class MusicMetadata : ScriptableObject
     {
         [Header("Metadata")]
         public string SongName;
